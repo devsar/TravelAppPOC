@@ -11,7 +11,11 @@ export class CityHeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    setTimeout(() => {
+      this.getCityData();
+    }, 1000);
+  }
 
   getCityData() {
     

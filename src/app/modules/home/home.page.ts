@@ -14,12 +14,12 @@ export class HomePage implements OnInit {
   constructor(private cpService: CiudadesProviderService) {}
 
   getCities(): void {
-    setTimeout(() => {
-      this.ciudades = this.cpService.getCities();
-    }, 1000);
+    this.ciudades = this.cpService.getCities();
   }
 
   ngOnInit() {
-    this.getCities();
+    setTimeout(() => {
+      this.getCities();
+    }, 1000);
   }
 }
