@@ -1,0 +1,19 @@
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.gallery-imgs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+}
+.gallery-imgs-container ion-img {
+    margin-right: 15px;
+    cursor: pointer;
+}

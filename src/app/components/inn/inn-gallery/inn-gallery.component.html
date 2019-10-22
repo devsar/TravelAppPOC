@@ -1,3 +1,9 @@
-<p>
-  inn-gallery works!
-</p>
+<section *ngIf="inndata">
+  <h1>Explorar</h1>
+  <div *ngFor="let gallery of inndata.galleriesImgs" class="gallery-container">
+    <h2 class="gallery-title"> {{ gallery.name  }} </h2>
+    <div class="gallery-imgs-container">
+      <ion-img *ngFor="let image of gallery.imgs" class="gallery-img" [src]="image"></ion-img>
+    </div>
+  </div>
+</section>
