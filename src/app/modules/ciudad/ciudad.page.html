@@ -1,5 +1,7 @@
-<app-city-header [citydata]="citydata"></app-city-header>
+<ion-content>
+    <app-city-header [citydata]="citydata"></app-city-header>
 
-<ion-content class="ion-padding">
-    <app-inn-card *ngFor="let inn of cityinns" [inndata]="inn"></app-inn-card>
+    <section class="ion-padding">
+        <app-inn-card *ngFor="let inn of cityinns" [inndata]="inn"></app-inn-card>
+    </section>
 </ion-content>
