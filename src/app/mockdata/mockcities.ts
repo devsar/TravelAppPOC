@@ -73,7 +73,7 @@ export const CIUDADES: Ciudad[] = [
         name: 'Trancoso',
         state: 'Brasil',
         img: 'https://dla.cdncimeco.com/uploads/2018/12/image5c27e80068e06.jpg',
-        description: 'Hermosa ciudad'
+        description: 'Hermosa ciudad',
         slug: 'trancoso'
     },
     {
