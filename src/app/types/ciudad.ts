@@ -4,4 +4,5 @@ export class Ciudad {
     state: string;
     img: string;
     description: string;
+    slug: string;
 }
