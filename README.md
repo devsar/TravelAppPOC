@@ -23,3 +23,13 @@ Estructura de la app:
     - DESTINO HEADER
     - TARJETA ALOJAMIENTO
     -[SERVICIO] -> CiudadProvider
+
+-CADA DEPARTAMENTO
+    - INN HEADER
+    - INN BRIEF
+    - INN GALLERY
+    - INN SERVICES
+    - INN LOCATION
+    - INN REVIEWS
+        -INN REVIEW
+    - INN HOST
