@@ -17,6 +17,48 @@ export const INNS: Inn[] = [
             'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/6be116d6-bbb1-4eb5-881e-a24f674fe6df.jpg?aki_policy=large'
         ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+        ],
         rating: 4.4,
         ratingQty: 135,
         price: 99,
@@ -37,6 +79,48 @@ export const INNS: Inn[] = [
             'https://a0.muscache.com/im/pictures/81792717/1ec8c187_original.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/81792807/a0761ea4_original.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/55913196/0044264f_original.jpg?aki_policy=large'
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.6,
         ratingQty: 15,

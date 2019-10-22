@@ -1,5 +1,6 @@
 import { InnType } from '../types/inntype';
 import { Ciudad } from '../types/ciudad';
+import { Gallery } from './gallery';
 
 export class Inn {
     id: number;
@@ -7,6 +8,7 @@ export class Inn {
     description: string;
     city: Ciudad;
     imgs: string[];
+    galleriesImgs: Gallery[];
     rating: number;
     ratingQty: number;
     price: number;
