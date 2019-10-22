@@ -1,3 +1,5 @@
-<p>
-  inn-header works!
-</p>
+<section *ngIf="inndata">
+  
+  <ion-button>Explorar espacio</ion-button>
+  <ion-img [src]="inndata.imgs[0]"></ion-img>
+</section>
