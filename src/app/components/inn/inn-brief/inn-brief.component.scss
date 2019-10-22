@@ -1,0 +1,18 @@
+.inn-brief-numbers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.inn-brief-number {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inn-brief-number h2,
+.inn-brief-number h6{
+    margin: 0;
+}

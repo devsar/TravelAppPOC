@@ -1,3 +1,25 @@
-<p>
-  inn-brief works!
-</p>
+<section *ngIf="inndata">
+  <h6> {{ inndata.innType.type }} en <span [routerLink]="['../../city/' + inndata.city.slug]">{{ inndata.city.name }}</span></h6>
+  <h1>{{ inndata.name }}</h1>
+  <div class="inn-brief-numbers">
+    <div class="inn-brief-number">
+      <h2> {{ inndata.capacity }} </h2>
+      <h6> Huéspedes </h6>
+    </div>
+    <div class="inn-brief-number">
+      <h2> {{ inndata.rooms }} </h2>
+      <h6> Habitaciones </h6>
+    </div>
+    <div class="inn-brief-number">
+      <h2> {{ inndata.beds }} </h2>
+      <h6> Camas </h6>
+    </div>
+    <div class="inn-brief-number">
+      <h2> {{ inndata.bathrooms }} </h2>
+      <h6> Baños </h6>
+    </div>
+  </div>
+  <div class="inn-description">
+    <p>{{ inndata.description }}</p>
+  </div>
+</section>
