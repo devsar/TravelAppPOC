@@ -1,5 +1,5 @@
-<app-city-header [citydata]="getCityData"></app-city-header>
+<app-city-header [citydata]="citydata"></app-city-header>
 
 <ion-content class="ion-padding">
-
+    <app-inn-card *ngFor="let inn of cityinns" [inndata]="inn"></app-inn-card>
 </ion-content>

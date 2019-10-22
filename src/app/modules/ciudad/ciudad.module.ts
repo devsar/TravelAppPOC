@@ -5,10 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CiudadPage } from './ciudad.page';
 import { CityHeaderComponent } from 'src/app/components/city-header/city-header.component';
+import { InnCardComponent } from 'src/app/components/inn-card/inn-card.component';
+import { InnsProviderService } from 'src/app/services/inns-provider/inns-provider.service';
 
 
 @NgModule({
-  declarations: [CiudadPage, CityHeaderComponent],
+  declarations: [CiudadPage, CityHeaderComponent, InnCardComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -20,5 +22,6 @@ import { CityHeaderComponent } from 'src/app/components/city-header/city-header.
       }
     ])
   ],
+  providers: [InnsProviderService],
 })
 export class CiudadModule { }

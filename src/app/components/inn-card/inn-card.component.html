@@ -1,0 +1,12 @@
+<ion-card *ngIf="inndata">
+  <img [src]="inndata.imgs[0]" />
+  <ion-card-header>
+    <ion-card-subtitle>{{ inndata.innType.type }} en {{ inndata.city.name }} </ion-card-subtitle>
+    <ion-card-title> {{ inndata.name }} </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>Rooms: {{ inndata.rooms }}</p>
+    <p>Bathrooms: {{ inndata.bathrooms }}</p>
+    <p>Rating: {{ inndata.rating }} de {{ inndata.ratingQty }} valoraciones </p>
+  </ion-card-content>
+</ion-card>

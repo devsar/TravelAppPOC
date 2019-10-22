@@ -7,18 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CityHeaderComponent implements OnInit {
 
-  @Input() citydata = {};
+  @Input() citydata;
 
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.getCityData();
-    }, 1000);
   }
-
-  getCityData() {
-    
-  }
-
 }

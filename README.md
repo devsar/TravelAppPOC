@@ -17,7 +17,9 @@ Estructura de la app:
     - TOPBAR
     - SEARCHBAR HOME
     - TARJETA CIUDAD (TARJETA CIUDAD SKELETON)
+    -[SERVICIO] -> CiudadProvider
 
 -CADA CIUDAD
     - DESTINO HEADER
     - TARJETA ALOJAMIENTO
+    -[SERVICIO] -> CiudadProvider

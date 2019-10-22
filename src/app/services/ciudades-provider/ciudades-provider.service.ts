@@ -12,4 +12,8 @@ export class CiudadesProviderService {
   getCities(): Ciudad[] {
     return CIUDADES;
   }
+
+  getCity(slug: string): Ciudad {
+    return CIUDADES.find((el) => el.slug === slug);
+  }
 }
