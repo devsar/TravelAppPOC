@@ -17,3 +17,27 @@
     margin-right: 15px;
     cursor: pointer;
 }
+ion-img.agrandar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+.obscure {
+    position: absolute;
+    min-width: 1000vw;
+    min-height: 1000vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    background-color: rgba(0,0,0,1);
+}
+.obscure.hide{
+    display: none;
+}

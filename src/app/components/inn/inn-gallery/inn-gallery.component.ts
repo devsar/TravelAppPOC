@@ -10,8 +10,24 @@ export class InnGalleryComponent implements OnInit {
 
   @Input() inndata: Inn;
 
+  agrandada = false;
+
   constructor() { }
 
   ngOnInit() {}
+
+  agrandarImagen(event: Event): void {
+    const img = event.target as Element;
+    const obscure = document.getElementsByClassName('obscure')[0];
+    if (!this.agrandada) {
+      obscure.classList.remove('hide');
+      img.classList.add('agrandar');
+      this.agrandada = true;
+    } else {
+      obscure.classList.add('hide');
+      img.classList.remove('agrandar');
+      this.agrandada = false;
+    }
+  }
 
 }

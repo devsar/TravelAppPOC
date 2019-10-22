@@ -1,9 +1,10 @@
-<section *ngIf="inndata">
+<section *ngIf="inndata" class="gallery">
   <h1>Explorar</h1>
   <div *ngFor="let gallery of inndata.galleriesImgs" class="gallery-container">
     <h2 class="gallery-title"> {{ gallery.name  }} </h2>
     <div class="gallery-imgs-container">
-      <ion-img *ngFor="let image of gallery.imgs" class="gallery-img" [src]="image"></ion-img>
+      <ion-img (click)="agrandarImagen($event)" *ngFor="let image of gallery.imgs" class="gallery-img" [src]="image"></ion-img>
     </div>
   </div>
+  <div class="obscure hide"></div>
 </section>
