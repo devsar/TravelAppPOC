@@ -1,8 +1,17 @@
-<app-topbar></app-topbar>
+<ion-header>
+  <app-topbar></app-topbar>
+</ion-header>
 
 <ion-content>
   <div class="ion-padding">
     <app-home-searchbar></app-home-searchbar>
-    <app-tarjeta-ciudad *ngFor="let ciudad of ciudades"></app-tarjeta-ciudad>
+    <div *ngIf="ciudades.length">
+      <app-tarjeta-ciudad *ngFor="let ciudad of ciudades" [citydata]="ciudad"></app-tarjeta-ciudad>
+    </div>
+    <div *ngIf="!ciudades.length">
+      <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
+      <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
+      <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
+    </div>
   </div>
 </ion-content>

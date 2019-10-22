@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Ciudad } from '../../types/ciudad';
 import { CiudadesProviderService } from 'src/app/services/ciudades-provider/ciudades-provider.service';
 
@@ -7,14 +7,19 @@ import { CiudadesProviderService } from 'src/app/services/ciudades-provider/ciud
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
   ciudades: Ciudad[] = [];
 
   constructor(private cpService: CiudadesProviderService) {}
 
   getCities(): void {
-    this.ciudades = this.cpService.getCities();
+    setTimeout(() => {
+      this.ciudades = this.cpService.getCities();
+    }, 1000);
   }
 
+  ngOnInit() {
+    this.getCities();
+  }
 }
