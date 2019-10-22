@@ -28,13 +28,12 @@ export class CiudadPage implements OnInit {
   }
 
   getCity() {
-    let slug = this.route.snapshot.paramMap.get('slug');
+    const slug = this.route.snapshot.paramMap.get('slug');
     this.citydata = this.cpService.getCity(slug);
   }
 
   getInns(citySlug: string) {
     this.cityinns = this.ipService.getInns(citySlug);
-    console.log(this.cityinns);
   }
 
 }
