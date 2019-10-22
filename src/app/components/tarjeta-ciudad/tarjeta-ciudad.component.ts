@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tarjeta-ciudad',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tarjeta-ciudad.component.scss'],
 })
 export class TarjetaCiudadComponent implements OnInit {
+
+  @Input() citydata;
 
   constructor() { }
 
