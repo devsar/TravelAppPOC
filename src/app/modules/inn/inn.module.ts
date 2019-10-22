@@ -4,11 +4,26 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { InnPage } from './inn.page';
+import { InnHeaderComponent } from 'src/app/components/inn/inn-header/inn-header.component';
+import { InnBriefComponent } from 'src/app/components/inn/inn-brief/inn-brief.component';
+import { InnGalleryComponent } from 'src/app/components/inn/inn-gallery/inn-gallery.component';
+import { InnServicesComponent } from 'src/app/components/inn/inn-services/inn-services.component';
+import { InnLocationComponent } from 'src/app/components/inn/inn-location/inn-location.component';
+import { InnReviewsComponent } from 'src/app/components/inn/inn-reviews/inn-reviews.component';
+import { InnHostComponent } from 'src/app/components/inn/inn-host/inn-host.component';
 
 
 
 @NgModule({
-  declarations: [InnPage],
+  declarations: [InnPage,
+    InnHeaderComponent,
+    InnBriefComponent,
+    InnGalleryComponent,
+    InnServicesComponent,
+    InnLocationComponent,
+    InnReviewsComponent,
+    InnHostComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Inn } from '../../types/inn';
+import { Inn } from '../../../types/inn';
 
 @Component({
   selector: 'app-inn-card',

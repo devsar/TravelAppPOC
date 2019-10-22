@@ -12,4 +12,9 @@ export class InnsProviderService {
   getInns(citySlug: string): Inn[] {
     return INNS.filter( (el) => el.city.slug === citySlug);
   }
+
+  getInn(innId: string): Inn {
+    const innIdNumber = +innId;
+    return INNS.find( (el) => el.id === innIdNumber);
+  }
 }
