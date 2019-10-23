@@ -153,6 +153,48 @@ export const INNS: Inn[] = [
             'https://a0.muscache.com/im/pictures/44491468/4d5f07e5_original.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/36752533/c9dffe47_original.jpg?aki_policy=large'
         ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+        ],
         rating: 4.9,
         ratingQty: 235,
         price: 125,
@@ -172,6 +214,48 @@ export const INNS: Inn[] = [
             'https://a0.muscache.com/im/pictures/41279945/d00ee3fd_original.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/41280349/e0f0aa27_original.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/41280434/5b04d2d4_original.jpg?aki_policy=large'
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 3.9,
         ratingQty: 101,
@@ -193,6 +277,48 @@ export const INNS: Inn[] = [
             'https://a0.muscache.com/im/pictures/afecd1fe-0a15-4f10-b4ba-5b3dab5dc4f6.jpg?aki_policy=large',
             'https://a0.muscache.com/im/pictures/3f91f881-3a2a-4198-8bcc-1b4286cc9c2e.jpg?aki_policy=large'
         ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+        ],
         rating: 4.8,
         ratingQty: 17,
         price: 78,
@@ -203,7 +329,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[5],
     },
     {
-        id: 1,
+        id: 6,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -212,6 +338,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -223,7 +391,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 7,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -232,6 +400,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -243,7 +453,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 8,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -252,6 +462,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -263,7 +515,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 9,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -272,6 +524,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -283,7 +577,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 10,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -292,6 +586,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -303,7 +639,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 11,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -312,6 +648,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -323,7 +701,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 12,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -332,6 +710,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -343,7 +763,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 13,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -352,6 +772,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -363,7 +825,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 14,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -372,6 +834,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -383,7 +887,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 15,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -392,6 +896,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -403,7 +949,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 16,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -413,25 +959,47 @@ export const INNS: Inn[] = [
             '',
             ''
         ],
-        rating: 4.4,
-        ratingQty: 135,
-        price: 99,
-        rooms: 2,
-        beds: 4,
-        bathrooms: 1,
-        capacity: 3,
-        innType: INNTYPES[0],
-    },
-    {
-        id: 1,
-        name: 'Casa bonita',
-        description: '',
-        city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
-        imgs: [
-            '',
-            '',
-            '',
-            ''
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -443,7 +1011,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 17,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -452,6 +1020,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -463,7 +1073,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 18,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -472,6 +1082,48 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
@@ -483,7 +1135,7 @@ export const INNS: Inn[] = [
         innType: INNTYPES[0],
     },
     {
-        id: 1,
+        id: 19,
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -492,6 +1144,110 @@ export const INNS: Inn[] = [
             '',
             '',
             ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+        ],
+        rating: 4.4,
+        ratingQty: 135,
+        price: 99,
+        rooms: 2,
+        beds: 4,
+        bathrooms: 1,
+        capacity: 3,
+        innType: INNTYPES[0],
+    },
+    {
+        id: 20,
+        name: 'Casa bonita',
+        description: '',
+        city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
+        imgs: [
+            '',
+            '',
+            '',
+            ''
+        ],
+        galleriesImgs: [
+            {
+                id: 1,
+                name: 'Habitaciones',
+                imgs: [
+                    'https://a0.muscache.com/im/pictures/75626cda-24d7-4e81-8a91-7222d5772032.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/9dfac763-65cd-4653-b0b8-154b686fcd42.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/aadc30bd-9b8f-4e4b-af0b-b1d22fc1b377.jpg?aki_policy=large',
+                    'https://a0.muscache.com/im/pictures/5aba73d5-683e-4264-9b2f-7d150f814de1.jpg?aki_policy=large'
+                ]
+            },
+            {
+                id: 2,
+                name: 'Sala de estar',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 3,
+                name: 'Cocina',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
+            {
+                id: 4,
+                name: 'Alrededores',
+                imgs: [
+                    '',
+                    '',
+                    '',
+                    ''
+                ]
+            },
         ],
         rating: 4.4,
         ratingQty: 135,
