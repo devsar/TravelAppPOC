@@ -6,7 +6,7 @@
   <div class="ion-padding">
     <app-home-searchbar></app-home-searchbar>
     <div *ngIf="ciudades.length">
-      <app-tarjeta-ciudad *ngFor="let ciudad of ciudades" [citydata]="ciudad"></app-tarjeta-ciudad>
+      <app-tarjeta-ciudad [routerLink]="['../city/' + ciudad.slug]" *ngFor="let ciudad of ciudades" [citydata]="ciudad"></app-tarjeta-ciudad>
     </div>
     <div *ngIf="!ciudades.length">
       <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
