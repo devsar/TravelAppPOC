@@ -1,3 +1,23 @@
-<p>
-  inn-host works!
-</p>
+<section *ngIf="inndata">
+  <h1>Conoce a tu anfitrión</h1>
+
+  <ion-card>
+      <img [src]="inndata.hostUser.profileImg" />
+      <ion-card-header>
+        <ion-card-subtitle>{{ inndata.city.name }}, {{ inndata.city.state }}, Brasil</ion-card-subtitle>
+        <ion-card-title>{{ inndata.hostUser.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-card-subtitle>{{ inndata.hostUser.bioTitle }}</ion-card-subtitle>
+        {{ inndata.hostUser.bioText }}
+      </ion-card-content>
+      <ion-card-content>
+         Idiomas: <span *ngFor="let lan of inndata.hostUser.languages">{{ lan }}, </span>
+         Índice de respuestas: <span>{{ inndata.hostUser.responseRate }}</span>
+         <div *ngIf="inndata.hostUser.verifiedUser">
+           Usuario verificado: <ion-icon name="checkmark-circle"></ion-icon>
+         </div>
+      </ion-card-content>
+      
+    </ion-card>
+</section>

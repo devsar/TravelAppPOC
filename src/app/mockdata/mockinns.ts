@@ -5,10 +5,12 @@ import { Ciudad } from '../types/ciudad';
 import { CIUDADES } from '../mockdata/mockcities';
 import { INNSERVICES } from './mockinnservices';
 import { REVIEWS } from './mockreviews';
+import { HOSTUSERS } from './mockhostusers';
 
 export const INNS: Inn[] = [
     {
         id: 1,
+        hostUser: HOSTUSERS[0],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -80,6 +82,7 @@ export const INNS: Inn[] = [
         },
     {
         id: 2,
+        hostUser: HOSTUSERS[1],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -151,6 +154,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 3,
+        hostUser: HOSTUSERS[2],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -232,6 +236,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 4,
+        hostUser: HOSTUSERS[3],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
@@ -301,6 +306,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 5,
+        hostUser: HOSTUSERS[4],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -371,6 +377,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 6,
+        hostUser: HOSTUSERS[5],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -440,6 +447,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 7,
+        hostUser: HOSTUSERS[6],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -509,6 +517,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 8,
+        hostUser: HOSTUSERS[7],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -578,6 +587,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 9,
+        hostUser: HOSTUSERS[8],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -647,6 +657,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 10,
+        hostUser: HOSTUSERS[9],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -716,6 +727,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 11,
+        hostUser: HOSTUSERS[10],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -785,6 +797,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 12,
+        hostUser: HOSTUSERS[11],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -854,6 +867,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 13,
+        hostUser: HOSTUSERS[12],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -923,6 +937,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 14,
+        hostUser: [13],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -992,6 +1007,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 15,
+        hostUser: HOSTUSERS[14],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -1061,6 +1077,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 16,
+        hostUser: HOSTUSERS[15],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -1130,6 +1147,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 17,
+        hostUser: HOSTUSERS[16],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -1199,6 +1217,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 18,
+        hostUser: HOSTUSERS[17],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -1268,6 +1287,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 19,
+        hostUser: HOSTUSERS[18],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -1337,6 +1357,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 20,
+        hostUser: HOSTUSERS[19],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),

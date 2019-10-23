@@ -4,9 +4,11 @@ import { Gallery } from './gallery';
 import { InnService } from './innservice';
 import { InnLocation } from './innlocation';
 import { Review } from './review';
+import { HostUser } from './hostuser';
 
 export class Inn {
     id: number;
+    hostUser: HostUser;
     name: string;
     description: string;
     city: Ciudad;
