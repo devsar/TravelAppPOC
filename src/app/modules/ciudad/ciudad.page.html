@@ -2,6 +2,6 @@
     <app-city-header [citydata]="citydata"></app-city-header>
 
     <section class="ion-padding">
-        <app-inn-card *ngFor="let inn of cityinns" [inndata]="inn"></app-inn-card>
+        <app-inn-card [routerLink]="['../../inn/' + inn.id]" routerLinkActive="router-link-active"  *ngFor="let inn of cityinns" [inndata]="inn"></app-inn-card>
     </section>
 </ion-content>
