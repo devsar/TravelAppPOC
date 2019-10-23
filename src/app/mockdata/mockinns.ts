@@ -69,7 +69,13 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
-    },
+        locationCoor: {
+            lat: -22.9648586,
+            long: -43.173116,
+        },
+        locationDescr: `El alojamiento de Iracema está en Río de Janeiro, Brasil.
+        O Bairro do Flamengo é um dos melhores para se viver. Nele se encontra todo tipo de comércio e transporte público. Não deixem de ver fotos de locais muito próximos de minha casa em que recomendo ao lazer!`
+        },
     {
         id: 2,
         name: 'Habitación en el corazón de Copacabana',
@@ -133,6 +139,12 @@ export const INNS: Inn[] = [
         capacity: 2,
         innType: INNTYPES[1],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: -22.9716782,
+            long: -43.1863013,
+        },
+        locationDescr: `El alojamiento de Iracema está en Río de Janeiro, Brasil.
+        O Bairro do Flamengo é um dos melhores para se viver. Nele se encontra todo tipo de comércio e transporte público. Não deixem de ver fotos de locais muito próximos de minha casa em que recomendo ao lazer!`
     },
     {
         id: 3,
@@ -207,6 +219,12 @@ export const INNS: Inn[] = [
         capacity: 2,
         innType: INNTYPES[3],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: -22.9882353,
+            long: 43.2067058,
+        },
+        locationDescr: `El alojamiento de Iracema está en Río de Janeiro, Brasil.
+        O Bairro do Flamengo é um dos melhores para se viver. Nele se encontra todo tipo de comércio e transporte público. Não deixem de ver fotos de locais muito próximos de minha casa em que recomendo ao lazer!`
     },
     {
         id: 4,
@@ -270,6 +288,11 @@ export const INNS: Inn[] = [
         capacity: 9,
         innType: INNTYPES[4],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: -22.9882353,
+            long: -43.2067058,
+        },
+        locationDescr: '',
     },
     {
         id: 5,
@@ -334,6 +357,11 @@ export const INNS: Inn[] = [
         capacity: 12,
         innType: INNTYPES[5],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: -22.9255717,
+            long: -43.1835632,
+        },
+        locationDescr: '',
     },
     {
         id: 6,
@@ -397,6 +425,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 7,
@@ -460,6 +493,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 8,
@@ -523,6 +561,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 9,
@@ -586,6 +629,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 10,
@@ -649,6 +697,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 11,
@@ -712,6 +765,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 12,
@@ -775,6 +833,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 13,
@@ -838,6 +901,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 14,
@@ -901,6 +969,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 15,
@@ -964,6 +1037,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 16,
@@ -1027,6 +1105,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 17,
@@ -1090,6 +1173,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 18,
@@ -1153,6 +1241,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 19,
@@ -1216,6 +1309,11 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
     {
         id: 20,
@@ -1279,5 +1377,10 @@ export const INNS: Inn[] = [
         capacity: 3,
         innType: INNTYPES[0],
         innServices: INNSERVICES,
+        locationCoor: {
+            lat: 0,
+            long: 0,
+        },
+        locationDescr: '',
     },
 ];

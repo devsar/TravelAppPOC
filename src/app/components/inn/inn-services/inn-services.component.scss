@@ -12,9 +12,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 2%;
 }
 .service-container.activo {
     background-color: greenyellow;
+}
+.service-container:not(.activo) .service-icon,
+.service-container:not(.activo) h4{
+    color: #aaa;
+
 }
 .service-icon {
     width: 100%;

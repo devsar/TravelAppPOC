@@ -1,0 +1,21 @@
+.map-container {
+  position: relative;
+  width: 100%;
+}
+ion-fab-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+agm-map {
+    height: 300px;
+}
+agm-map.zoomed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

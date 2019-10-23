@@ -11,6 +11,7 @@ import { InnServicesComponent } from 'src/app/components/inn/inn-services/inn-se
 import { InnLocationComponent } from 'src/app/components/inn/inn-location/inn-location.component';
 import { InnReviewsComponent } from 'src/app/components/inn/inn-reviews/inn-reviews.component';
 import { InnHostComponent } from 'src/app/components/inn/inn-host/inn-host.component';
+import { AgmCoreModule, AgmMap } from '@agm/core';
 
 
 
@@ -22,7 +23,7 @@ import { InnHostComponent } from 'src/app/components/inn/inn-host/inn-host.compo
     InnServicesComponent,
     InnLocationComponent,
     InnReviewsComponent,
-    InnHostComponent
+    InnHostComponent,
   ],
   imports: [
     CommonModule,
@@ -33,7 +34,10 @@ import { InnHostComponent } from 'src/app/components/inn/inn-host/inn-host.compo
         path: '',
         component: InnPage
       }
-    ])
+    ]),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAS8mPDdHeLG3ajmFSHdICf2Qynes0AGgM'
+    })
   ],
 })
 export class InnModule { }

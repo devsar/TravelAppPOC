@@ -1,3 +1,29 @@
-<p>
-  inn-location works!
-</p>
+<section *ngIf="inndata">
+  <h1>Ubicación</h1>
+  <p>{{ inndata.locationDescr }}</p>
+  <!-- this creates a google map on the page with the given lat/lng from -->
+  <!-- the component as the initial center of the map: -->
+  <div class="map-container">
+    <agm-map
+      class="agm-map"
+      [latitude]="inndata.locationCoor.lat"
+      [longitude]="inndata.locationCoor.long"
+      [disableDefaultUI]="true"
+      [zoom]="8"
+      [mapDraggable]="draggable"
+      >
+      <agm-marker
+        [latitude]="inndata.locationCoor.lat"
+        [longitude]="inndata.locationCoor.long"
+        >
+          <agm-info-window>{{ inndata.name }}</agm-info-window>
+      </agm-marker>
+    </agm-map>
+    <ion-fab-button *ngIf="!zoomed" (click)="zoomIn()">
+      <ion-icon name="qr-scanner"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button *ngIf="zoomed" (click)="zoomOut()">
+        <ion-icon name="close"></ion-icon>
+      </ion-fab-button>
+  </div>
+</section>
