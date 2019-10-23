@@ -3,6 +3,7 @@ import { InnType } from '../types/inntype';
 import { INNTYPES } from '../mockdata/mockinntypes';
 import { Ciudad } from '../types/ciudad';
 import { CIUDADES } from '../mockdata/mockcities';
+import { INNSERVICES } from './mockinnservices';
 
 export const INNS: Inn[] = [
     {
@@ -67,6 +68,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 2,
@@ -130,6 +132,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 2,
         innType: INNTYPES[1],
+        innServices: INNSERVICES,
     },
     {
         id: 3,
@@ -203,6 +206,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 2,
         innType: INNTYPES[3],
+        innServices: INNSERVICES,
     },
     {
         id: 4,
@@ -265,10 +269,12 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 9,
         innType: INNTYPES[4],
+        innServices: INNSERVICES,
     },
     {
         id: 5,
         name: 'Boemia carioca',
+        // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
         imgs: [
@@ -327,6 +333,7 @@ export const INNS: Inn[] = [
         bathrooms: 2,
         capacity: 12,
         innType: INNTYPES[5],
+        innServices: INNSERVICES,
     },
     {
         id: 6,
@@ -389,6 +396,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 7,
@@ -451,6 +459,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 8,
@@ -513,6 +522,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 9,
@@ -575,6 +585,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 10,
@@ -637,6 +648,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 11,
@@ -699,6 +711,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 12,
@@ -761,6 +774,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 13,
@@ -823,6 +837,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 14,
@@ -885,6 +900,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 15,
@@ -947,6 +963,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 16,
@@ -1009,6 +1026,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 17,
@@ -1071,6 +1089,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 18,
@@ -1133,6 +1152,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 19,
@@ -1195,6 +1215,7 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
     {
         id: 20,
@@ -1257,5 +1278,6 @@ export const INNS: Inn[] = [
         bathrooms: 1,
         capacity: 3,
         innType: INNTYPES[0],
+        innServices: INNSERVICES,
     },
 ];

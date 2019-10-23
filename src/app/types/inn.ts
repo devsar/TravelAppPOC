@@ -1,6 +1,8 @@
 import { InnType } from '../types/inntype';
 import { Ciudad } from '../types/ciudad';
 import { Gallery } from './gallery';
+import { InnService } from './innservice';
+import { INNSERVICES } from '../mockdata/mockinnservices';
 
 export class Inn {
     id: number;
@@ -17,4 +19,5 @@ export class Inn {
     capacity: number;
     beds: number;
     innType: InnType;
+    innServices: InnService[];
 }

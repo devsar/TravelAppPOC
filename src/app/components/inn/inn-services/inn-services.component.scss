@@ -1,0 +1,29 @@
+.services-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.service-container {
+    width: 25%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.service-container.activo {
+    background-color: greenyellow;
+}
+.service-icon {
+    width: 100%;
+    font-size: 64px;
+}
+
+.service-container h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 6px;
+}
