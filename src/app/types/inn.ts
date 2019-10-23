@@ -3,6 +3,7 @@ import { Ciudad } from '../types/ciudad';
 import { Gallery } from './gallery';
 import { InnService } from './innservice';
 import { InnLocation } from './innlocation';
+import { Review } from './review';
 
 export class Inn {
     id: number;
@@ -22,4 +23,5 @@ export class Inn {
     innServices: InnService[];
     locationCoor: InnLocation;
     locationDescr: string;
+    reviews: Review[];
 }

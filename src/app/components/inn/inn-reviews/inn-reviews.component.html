@@ -1,3 +1,5 @@
-<p>
-  inn-reviews works!
-</p>
+<section *ngIf="inndata">
+  <h1>Opiniones</h1>
+
+  <app-inn-review *ngFor="let review of inndata.reviews" [reviewdata]="review"></app-inn-review>
+</section>

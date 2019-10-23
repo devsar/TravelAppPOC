@@ -1,0 +1,66 @@
+.inn-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+.review-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-left {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header-left ion-img {
+    width: 100%;
+    margin: auto;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 24px;
+}
+h4, h5 {
+    margin: 0;
+}
+h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+h5 {
+    font-size: 12px;
+    font-weight: 300;
+}
+.review-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rating ion-icon {
+    font-size: 24px;
+}
+h6 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.review-body p {
+    margin-top: 0;
+}
