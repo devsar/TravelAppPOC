@@ -937,7 +937,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 14,
-        hostUser: [13],
+        hostUser: HOSTUSERS[13],
         name: 'Casa bonita',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
