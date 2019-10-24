@@ -8,6 +8,7 @@ import { ReservationBriefComponent } from 'src/app/components/payment/reservatio
 import { PaymentCheckoutComponent } from 'src/app/components/payment/payment-checkout/payment-checkout.component';
 import { ReservationMessageComponent } from 'src/app/components/payment/reservation-message/reservation-message.component';
 import { PaymentFooterComponent } from 'src/app/components/payment/payment-footer/payment-footer.component';
+import { ReservationHeaderModule } from '../reservation-header/reservation-header.module';
 
 
 @NgModule({
@@ -16,12 +17,13 @@ import { PaymentFooterComponent } from 'src/app/components/payment/payment-foote
     ReservationBriefComponent,
     PaymentCheckoutComponent,
     ReservationMessageComponent,
-    PaymentFooterComponent
+    PaymentFooterComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ReservationHeaderModule,
     RouterModule.forChild([
       {
         path: '',

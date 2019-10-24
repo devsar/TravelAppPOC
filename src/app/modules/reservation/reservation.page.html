@@ -1,6 +1,7 @@
 <ion-content class="ion-padding">
+  <app-reservation-header></app-reservation-header>
   <app-inn-brief [inndata]="inndata"></app-inn-brief>
   <app-reservation-dates></app-reservation-dates>
-  <app-reservation-guests></app-reservation-guests>
+  <app-reservation-guests [inndata]="inndata"></app-reservation-guests>
   <app-reservation-footer></app-reservation-footer>
 </ion-content>

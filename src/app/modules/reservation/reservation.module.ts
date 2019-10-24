@@ -8,6 +8,7 @@ import { InnBriefComponent } from 'src/app/components/reservation/inn-brief/inn-
 import { ReservationDatesComponent } from 'src/app/components/reservation/reservation-dates/reservation-dates.component';
 import { ReservationGuestsComponent } from 'src/app/components/reservation/reservation-guests/reservation-guests.component';
 import { ReservationFooterComponent } from 'src/app/components/reservation/reservation-footer/reservation-footer.component';
+import { ReservationHeaderModule } from '../reservation-header/reservation-header.module';
 
 
 
@@ -23,6 +24,7 @@ import { ReservationFooterComponent } from 'src/app/components/reservation/reser
     CommonModule,
     FormsModule,
     IonicModule,
+    ReservationHeaderModule,
     RouterModule.forChild([
       {
         path: '',

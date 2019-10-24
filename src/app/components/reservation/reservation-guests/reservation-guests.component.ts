@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { Inn } from 'src/app/types/inn';
+import { Reservation } from 'src/app/types/reservation';
 
 @Component({
   selector: 'app-reservation-guests',
@@ -7,8 +9,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationGuestsComponent implements OnInit {
 
+  reservationData: Reservation = {
+    id: 0,
+    dateIn: '',
+    dateOut: '',
+    pricePerNight: 0,
+    platformCharge: 0,
+    taxes: 0,
+    adults: 0,
+    children: 0,
+  };
+
+  @Input() inndata: Inn;
+
   constructor() { }
 
   ngOnInit() {}
+
+  getGuestsQty(): number {
+    return this.reservationData.adults + this.reservationData.children;
+  }
+
+  addAdultos(): void {
+    this.reservationData.adults++;
+  }
+  removeAdultos(): void {
+    this.reservationData.adults--;
+  }
+
+  addChildren(): void {
+    this.reservationData.children++;
+  }
+  removeChildren(): void {
+    this.reservationData.children--;
+  }
 
 }
