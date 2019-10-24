@@ -3,7 +3,7 @@
   <section class="ion-padding">
     <app-inn-brief [inndata]="inndata"></app-inn-brief>
     <app-reservation-dates></app-reservation-dates>
-    <app-reservation-guests [inndata]="inndata"></app-reservation-guests>
-    <app-reservation-footer></app-reservation-footer>
+    <app-reservation-guests (propagar)="updateReservationGuests($event)" [inndata]="inndata"></app-reservation-guests>
+    <app-reservation-footer [inndata]="inndata" [reservationdata]="reservationdata"></app-reservation-footer>
   </section>
 </ion-content>

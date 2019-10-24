@@ -1,6 +1,8 @@
 <ion-content>
   <app-reservation-header [paso]="3" [titulo]="'Datos de pago'"></app-reservation-header>
   <section class="ion-padding">
+      <pre>{{ state$ | async | json }}</pre>
+      Hola
     <app-reservation-brief></app-reservation-brief>
     <app-payment-checkout></app-payment-checkout>
     <app-reservation-message></app-reservation-message>

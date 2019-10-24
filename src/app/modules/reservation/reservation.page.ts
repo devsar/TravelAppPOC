@@ -3,6 +3,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { Inn } from 'src/app/types/inn';
 import { InnsProviderService } from 'src/app/services/inns-provider/inns-provider.service';
+import { Reservation } from 'src/app/types/reservation';
 
 @Component({
   selector: 'app-reservation',
@@ -13,6 +14,16 @@ import { InnsProviderService } from 'src/app/services/inns-provider/inns-provide
 export class ReservationPage implements OnInit {
 
   inndata: Inn;
+  reservationdata: Reservation = {
+    id: 0,
+    dateIn: '',
+    dateOut: '',
+    pricePerNight: 0,
+    platformCharge: 0,
+    taxes: 0,
+    adults: 0,
+    children: 0,
+  };
 
   constructor(
     private route: ActivatedRoute,
@@ -29,6 +40,11 @@ export class ReservationPage implements OnInit {
     getInn() {
       const id = this.route.snapshot.paramMap.get('id');
       this.inndata = this.ipService.getInn(id);
+    }
+
+    updateReservationGuests(data: Reservation): void {
+      this.reservationdata.adults = data.adults;
+      this.reservationdata.children = data.children;
     }
 
 }

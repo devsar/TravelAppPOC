@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart, ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-payment.page',
@@ -7,8 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentPage implements OnInit {
 
-  constructor() { }
+  state$: Observable<object>;
 
-  ngOnInit() {}
+  constructor(public activatedRoute: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.state$ = this.activatedRoute.paramMap
+      .pipe(map(() => window.history.state));
+  }
 
 }

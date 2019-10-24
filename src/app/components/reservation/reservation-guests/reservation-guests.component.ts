@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { Inn } from 'src/app/types/inn';
 import { Reservation } from 'src/app/types/reservation';
 
@@ -8,6 +8,8 @@ import { Reservation } from 'src/app/types/reservation';
   styleUrls: ['./reservation-guests.component.scss'],
 })
 export class ReservationGuestsComponent implements OnInit {
+
+  @Output() propagar = new EventEmitter<Reservation>();
 
   reservationData: Reservation = {
     id: 0,
@@ -32,24 +34,33 @@ export class ReservationGuestsComponent implements OnInit {
 
   addAdultos(): void {
     this.reservationData.adults++;
+    this.emitir();
   }
   removeAdultos(): void {
     if(this.reservationData.adults > 0 ) {
       this.reservationData.adults--;
     }
+    this.emitir();
   }
 
   addChildren(): void {
     this.reservationData.children++;
+    this.emitir();
   }
   removeChildren(): void {
     if (this.reservationData.children > 0 ) {
       this.reservationData.children--;
     }
+    this.emitir();
   }
 
   checkErrors(): boolean {
     return this.reservationData.children + this.reservationData.adults > this.inndata.capacity;
+  }
+
+  emitir() {
+    console.log("emitiendo");
+    this.propagar.emit(this.reservationData);
   }
 
 }
