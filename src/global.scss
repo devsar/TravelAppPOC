@@ -24,3 +24,68 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-Light.ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-LightItalic.ttf");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gramatika";
+    src: url("./assets/fonts/Gramatika-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+html, body, app-root, ion-app {
+    font-family: 'Gramatika';
+}
