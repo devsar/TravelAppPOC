@@ -45,6 +45,7 @@ Estructura(Jerarquía) del proyecto:
         - RESERVATION DATES
         - RESERVATION GUESTS
         - RESERVATION FOOTER
+        - [DEL SHARED MODULE RESERVATION-HEADER] RESERVATION HEADER
         - [SERVICIO] -> InnProvider
 
 
@@ -53,3 +54,4 @@ Estructura(Jerarquía) del proyecto:
         - PAYMENT CHECKOUT
         - RESERVATION MESSAGE
         - PAYMENT FOOTER
+        - [DEL SHARED MODULE RESERVATION-HEADER] RESERVATION HEADER
