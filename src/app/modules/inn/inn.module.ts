@@ -13,6 +13,7 @@ import { InnReviewsComponent } from 'src/app/components/inn/inn-reviews/inn-revi
 import { InnHostComponent } from 'src/app/components/inn/inn-host/inn-host.component';
 import { AgmCoreModule, AgmMap } from '@agm/core';
 import { InnReviewComponent } from 'src/app/components/inn/inn-review/inn-review.component';
+import { InnFooterComponent } from 'src/app/components/inn/inn-footer/inn-footer.component';
 
 
 
@@ -26,6 +27,7 @@ import { InnReviewComponent } from 'src/app/components/inn/inn-review/inn-review
     InnReviewsComponent,
     InnReviewComponent,
     InnHostComponent,
+    InnFooterComponent
   ],
   imports: [
     CommonModule,
