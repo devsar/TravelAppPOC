@@ -1,7 +1,9 @@
-<ion-content class="ion-padding">
-  <app-reservation-header></app-reservation-header>
-  <app-inn-brief [inndata]="inndata"></app-inn-brief>
-  <app-reservation-dates></app-reservation-dates>
-  <app-reservation-guests [inndata]="inndata"></app-reservation-guests>
-  <app-reservation-footer></app-reservation-footer>
+<ion-content>
+  <app-reservation-header [paso]="2" [titulo]="'Datos de la reserva'"></app-reservation-header>
+  <section class="ion-padding">
+    <app-inn-brief [inndata]="inndata"></app-inn-brief>
+    <app-reservation-dates></app-reservation-dates>
+    <app-reservation-guests [inndata]="inndata"></app-reservation-guests>
+    <app-reservation-footer></app-reservation-footer>
+  </section>
 </ion-content>
