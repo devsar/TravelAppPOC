@@ -1,0 +1,33 @@
+.dates-container {
+    // TODO: probablemento estro tendría que ser global
+    border-bottom: 1px solid #aaa;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.in-date-container,
+.out-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+.in-date-container {
+    border-right: 1px solid #aaa;
+}
+
+ion-button {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+}
+
+h6 {
+    margin: 0;
+}
