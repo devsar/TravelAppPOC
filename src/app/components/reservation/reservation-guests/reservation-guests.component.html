@@ -1,14 +1,17 @@
 <section class="guests-container" *ngIf="inndata">
   
   <h1>Seleccionar huéspedes</h1>
-  <h5>{{ getGuestsQty() }} seleccionados de un máximo de {{ inndata.capacity }} huéspedes</h5>
+  <h5 class="capacityController" [ngClass]="checkErrors() ? 'error' : ''">{{ getGuestsQty() }} seleccionados de un máximo de {{ inndata.capacity }} huéspedes</h5>
 
   <div class="adultos fila">
     <div class="fila-left">
       <h2>Adultos</h2>
       <h3>Desde los 18 años inclusive</h3>
     </div>
-    <div class="right">
+    <div class="fila-center">
+        <h1 class="peopleNumber">{{ reservationData.adults }}</h1>
+      </div>
+    <div class="fila-right">
       <ion-button (click)="removeAdultos()" fill="outline" class="rounded">
         <ion-icon name="remove"></ion-icon>
       </ion-button>
@@ -23,11 +26,14 @@
         <h2>Niños</h2>
         <h3>Desde los 4 hasta los 17 años inclusive</h3>
       </div>
-      <div class="right">
+      <div class="fila-center">
+        <h1 class="peopleNumber">{{ reservationData.children }}</h1>
+      </div>
+      <div class="fila-right">
         <ion-button (click)="removeChildren()" fill="outline" class="rounded">
           <ion-icon name="remove"></ion-icon>
         </ion-button>
-        <ion-button (click)="addChildren()" fill="outline" class="rounded">
+        <ion-button  (click)="addChildren()" fill="outline" class="rounded">
           <ion-icon name="add"></ion-icon>
         </ion-button>
       </div>

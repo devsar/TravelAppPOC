@@ -2,7 +2,7 @@ import { InnType } from '../types/inntype';
 
 export const INNTYPES: InnType[] = [
     {id: 1, type: 'departamento completo'},
-    {id: 2, type: 'departamento compartida'},
+    {id: 2, type: 'departamento compartido'},
     {id: 3, type: 'casa completa'},
     {id: 4, type: 'casa compartida'},
     {id: 5, type: 'habitación privada'},

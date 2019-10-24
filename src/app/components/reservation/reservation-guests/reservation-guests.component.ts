@@ -34,14 +34,22 @@ export class ReservationGuestsComponent implements OnInit {
     this.reservationData.adults++;
   }
   removeAdultos(): void {
-    this.reservationData.adults--;
+    if(this.reservationData.adults > 0 ) {
+      this.reservationData.adults--;
+    }
   }
 
   addChildren(): void {
     this.reservationData.children++;
   }
   removeChildren(): void {
-    this.reservationData.children--;
+    if (this.reservationData.children > 0 ) {
+      this.reservationData.children--;
+    }
+  }
+
+  checkErrors(): boolean {
+    return this.reservationData.children + this.reservationData.adults > this.inndata.capacity;
   }
 
 }

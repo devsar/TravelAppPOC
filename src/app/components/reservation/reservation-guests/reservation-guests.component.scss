@@ -34,13 +34,16 @@
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
 }
 h3 {
-    font-size: 11px;
+    font-size: 12px;
     margin: 0;
     color: #555;
+}
+h5.error {
+    color:#cc3333;
 }
 h5 {
     font-size: 11px;
@@ -50,4 +53,8 @@ h5 {
     --border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+
+.peopleNumber{
+    padding: 0 10px;
 }
