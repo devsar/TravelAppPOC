@@ -1,0 +1,20 @@
+<section *ngIf="inndata" class="inn-footer-container">
+  <div class="left">
+    <div class="left-top">
+      <h6>${{ inndata.price }}</h6> <span>/noche</span>
+    </div>
+    <div class="left-bottom">
+      <ion-icon name="star" *ngIf="inndata.rating >= 1"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating >= 2"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating >= 3"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating >= 4"></ion-icon>
+      <ion-icon name="star-outline" *ngIf="inndata.rating > 4 && inndata.rating <= 4.5"></ion-icon>
+      <ion-icon name="star-half" *ngIf="inndata.rating > 4.5 && inndata.rating < 5"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating == 5"></ion-icon>
+      <span>{{ inndata.ratingQty }}</span>
+    </div>
+  </div>
+  <div class="right">
+    <ion-button>Reservar</ion-button>
+  </div>
+</section>
