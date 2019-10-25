@@ -1,12 +1,38 @@
 <ion-card *ngIf="inndata">
-  <img [src]="inndata.imgs[0]" />
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let img of inndata.imgs">
+      <ion-img [src]="img"></ion-img>
+    </ion-slide>
+  </ion-slides>
   <ion-card-header>
     <ion-card-subtitle>{{ inndata.innType.type }} en {{ inndata.city.name }} </ion-card-subtitle>
     <ion-card-title> {{ inndata.name }} </ion-card-title>
+    <ion-card-subtitle class="rating">
+      <ion-icon name="star" *ngIf="inndata.rating >= 1"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating >= 2"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating >= 3"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating >= 4"></ion-icon>
+      <ion-icon name="star-outline" *ngIf="inndata.rating > 4 && inndata.rating <= 4.5"></ion-icon>
+      <ion-icon name="star-half" *ngIf="inndata.rating > 4.5 && inndata.rating < 5"></ion-icon>
+      <ion-icon name="star" *ngIf="inndata.rating == 5"></ion-icon>
+      <span>&nbsp; {{ inndata.ratingQty }} evalucaciones</span>
+    </ion-card-subtitle>
   </ion-card-header>
   <ion-card-content>
-    <p>Rooms: {{ inndata.rooms }}</p>
-    <p>Bathrooms: {{ inndata.bathrooms }}</p>
-    <p>Rating: {{ inndata.rating }} de {{ inndata.ratingQty }} valoraciones </p>
+    <div class="data-container">
+      <span class="data">{{ inndata.capacity }}</span>
+      <ion-icon src="https://image.flaticon.com/icons/svg/259/259950.svg"></ion-icon>      
+      <span class="label">Capacidad</span>
+    </div>
+    <div class="data-container">
+      <span class="data">{{ inndata.rooms }}</span>
+      <ion-icon src="https://image.flaticon.com/icons/svg/259/259965.svg"></ion-icon>
+      <span class="label">Habitaciones</span>
+    </div>
+    <div class="data-container">
+      <span class="data">{{ inndata.bathrooms }}</span>
+      <ion-icon src="https://image.flaticon.com/icons/svg/259/259974.svg"></ion-icon>
+      <span class="label">Baños</span>
+    </div>
   </ion-card-content>
 </ion-card>

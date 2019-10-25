@@ -8,6 +8,11 @@ import { Inn } from '../../../types/inn';
 })
 export class InnCardComponent implements OnInit {
 
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400
+  };
+
   @Input() inndata: Inn;
 
   constructor() { }
