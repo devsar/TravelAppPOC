@@ -1,8 +1,5 @@
 <section class="reservation-footer-container" *ngIf="reservationdata && inndata">
-    <ion-button expand="full" [routerLink]="['./pay']" [state]="{'hello': 'world', 'inndata': inndata, 'reservationdata': reservationdata}" routerLinkActive="router-link-active" >
-        Continuar - {{ inndata.price }} - {{ reservationdata.adults + reservationdata.children }}
-    </ion-button>
-    <ion-button expand="full" (click)="go()">
+    <ion-button [disabled]="checkErrrors() ? 'true' : 'false'" expand="full" (click)="go()">
         Continuar - {{ inndata.price }} - {{ reservationdata.adults + reservationdata.children }}
     </ion-button>
 </section>

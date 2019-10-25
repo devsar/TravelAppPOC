@@ -1,0 +1,65 @@
+.payment-checkout-container{
+    margin-top: 24px;
+}
+.pay-method {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    background: #fff;
+    font-weight: bold;
+    ion-icon {
+        font-size: 24px;
+    }
+}
+.checkout-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.row {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 15px 20px;
+    border-bottom: 1px solid #aaa;
+}
+.row.total {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left ion-button {
+    font-size: 24px;
+    --padding-start: 0 !important;
+    --padding-end: 0 !important;
+}
+.hide-details-button {
+    font-size: 12px;
+    color: #666;
+    padding: 5px;
+    padding-left: 0;
+}
+.left.column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

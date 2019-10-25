@@ -10,7 +10,7 @@ import { Reservation } from 'src/app/types/reservation';
 export class ReservationBriefComponent implements OnInit {
 
   @Input() inndata: Inn;
-  @Input() reservation: Reservation;
+  @Input() reservationdata: Reservation;
 
   constructor() { }
 

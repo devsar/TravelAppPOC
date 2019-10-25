@@ -18,3 +18,8 @@ ion-button {
     --padding-top: 20px;
     --padding-bottom: 20px;
 }
+
+ion-button.error {
+    --background: #aaa;
+    --color: #222;	
+}

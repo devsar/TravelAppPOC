@@ -1,3 +1,25 @@
-<p>
-  reservation-brief works!
-</p>
+<section *ngIf="inndata" class="inn-footer-container">
+  <div class="left">
+    <div class="left-top">
+        <ion-icon name="star" *ngIf="inndata.rating >= 1"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating >= 2"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating >= 3"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating >= 4"></ion-icon>
+        <ion-icon name="star-outline" *ngIf="inndata.rating > 4 && inndata.rating <= 4.5"></ion-icon>
+        <ion-icon name="star-half" *ngIf="inndata.rating > 4.5 && inndata.rating < 5"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating == 5"></ion-icon>
+        <span>&nbsp; {{ inndata.ratingQty }} evalucaciones</span>
+      </div>
+    <div class="left-middle">
+      <span class="inn-name">{{ inndata.name }}</span>
+      <span class="inn-aditional-data">{{ inndata.innType.type }} en {{ inndata.city.name }}</span>
+    </div>
+    <div class="left-bottom">
+      <h6> Se hospedan <span> {{ reservationdata.adults }} adultos </span> y <span>{{ reservationdata.children }} niños </span> del <span>{{ reservationdata.dateIn }}</span> al <span>{{ reservationdata.dateOut }}</span> inclusive.</h6>
+    </div>
+    
+  </div>
+  <div class="right">
+    <ion-img [src]="inndata.imgs[0]"></ion-img>
+  </div>
+</section>

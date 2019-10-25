@@ -1,10 +1,8 @@
 <ion-content>
-  <app-reservation-header [paso]="3" [titulo]="'Datos de pago'"></app-reservation-header>
+  <app-reservation-header [paso]="3" [titulo]="'Revisar y pagar'"></app-reservation-header>
   <section class="ion-padding">
-      <pre>{{ state$ | async | json }}</pre>
-      Hola
-    <app-reservation-brief></app-reservation-brief>
-    <app-payment-checkout></app-payment-checkout>
+    <app-reservation-brief [reservationdata]="reservationdata" [inndata]="inndata"></app-reservation-brief>
+    <app-payment-checkout [reservationdata]="reservationdata"></app-payment-checkout>
     <app-reservation-message></app-reservation-message>
     <app-payment-footer></app-payment-footer>
   </section>

@@ -18,11 +18,17 @@ export class ReservationFooterComponent implements OnInit {
   ngOnInit() {}
 
   go() {
-    this.router.navigateByUrl('/inn/' + this.inndata.id + '/book/pay', { state:
-      {
-        inndata: this.inndata,
-        reservationdata: this.reservationdata
-      } });
+    if (!this.checkErrrors()) {
+      this.router.navigateByUrl('/inn/' + this.inndata.id + '/book/pay', { state:
+        {
+          inndata: this.inndata,
+          reservationdata: this.reservationdata
+        } });
+    }
+  }
+
+  checkErrrors() {
+    return this.reservationdata.adults + this.reservationdata.children > this.inndata.capacity;
   }
 
 }

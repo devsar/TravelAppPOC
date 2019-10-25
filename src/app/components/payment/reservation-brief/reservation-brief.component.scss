@@ -1,0 +1,69 @@
+.inn-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 15px 15px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left > div {
+    margin-bottom: 10px;
+}
+.left-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #555;
+    font-size: 12px;
+}
+.inn-name {
+    text-transform: uppercase;
+}
+.left-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    h6 {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+        color: #555;
+    }
+    span {
+        font-size: 14px;
+        color: #555;
+    }
+}
+.left-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    ion-icon {
+        font-size: 13px;
+    }
+    span {
+        font-size: 13px;
+        color: #222;
+    }
+}
+.right {
+    width: 33%;
+    margin-left: 24px;
+
+    ion-img {
+        width: 100%;
+        height: auto;
+    }
+}
