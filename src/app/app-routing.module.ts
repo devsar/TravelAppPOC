@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'inn/:id',  loadChildren: () => import('./modules/inn/inn.module').then( m => m.InnModule)},
   { path: 'inn/:id/book',  loadChildren: () => import('./modules/reservation/reservation.module').then( m => m.ReservationModule)},
   { path: 'inn/:id/book/pay',  loadChildren: () => import('./modules/payment/payment.module').then( m => m.PaymentModule)},
+  { path: 'inn/:id/book/thank-you',  loadChildren: () => import('./modules/thank-you/thank-you.module').then( m => m.ThankYouModule)},
 ];
 
 @NgModule({

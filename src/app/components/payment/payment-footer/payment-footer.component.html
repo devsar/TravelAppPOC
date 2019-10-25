@@ -1,3 +1,5 @@
-<p>
-  payment-footer works!
-</p>
+<section class="payment-footer-container" *ngIf="reservationdata && inndata">
+    <ion-button [disabled]="checkErrrors() ? 'true' : 'false'" expand="full" (click)="go()">
+        Finalizar reserva - {{ inndata.price }} - {{ reservationdata.adults + reservationdata.children }}
+    </ion-button>
+</section>
