@@ -1,6 +1,9 @@
-<h1>
-  {{ citydata.name }}
-</h1>
-<div *ngIf="citydata">
-  <ion-img [src]="citydata.img"></ion-img>
-</div>
+<header>
+  <ion-button [routerLink]="'/home'" routerLinkActive="router-link-active"  fill="clear" color="light"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  <h1 class="city-name">
+    {{ citydata.name }}
+  </h1>
+  <div class="city-image" *ngIf="citydata">
+    <ion-img [src]="citydata.img"></ion-img>
+  </div>
+</header>

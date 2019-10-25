@@ -1,0 +1,25 @@
+header {
+    position: relative;
+}
+.city-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 30px;
+    background: linear-gradient(0deg, rgba(2,0,36,0.7) 0%, rgba(0,212,255,.2) 71%,  rgba(0,212,255,.0) 100%);
+    width: 100%;
+    padding: 5px 24px 10px 24px;
+    margin-bottom: 0;
+}
+ion-button {
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 24px;
+    --padding-start: 0;
+    --padding-end: 10px;
+}
