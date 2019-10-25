@@ -55,3 +55,7 @@ Estructura(Jerarquía) del proyecto:
         - RESERVATION MESSAGE
         - PAYMENT FOOTER
         - [DEL SHARED MODULE RESERVATION-HEADER] RESERVATION HEADER
+
+    - THANK-YOU PAGE
+        - THANK-YOU HEADER
+        - THANK-YOU BODY
