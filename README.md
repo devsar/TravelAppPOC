@@ -63,10 +63,10 @@ Estructura(Jerarquía) del proyecto:
 
 // TODO:
 -   // Calendar dates
--   Home cards
--   City headers
--   Explorar el espacio popup
--   Pament method form
+-   // Home cards
+-   // City headers
+-   // Explorar el espacio popup
+-   Payment method form
 -   Home searchbar filter cities
 -   Inn resume cards
 -   Complete mock data
@@ -74,3 +74,4 @@ Estructura(Jerarquía) del proyecto:
 -   Improve icons in inn-services
 -   Change marker with wicrcle in inn-location map
 -   Manage reservation fees in typescript
+-   Home Topbar
