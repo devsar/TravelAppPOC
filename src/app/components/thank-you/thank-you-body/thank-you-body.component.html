@@ -1,1 +1,14 @@
+<section class="thank-you-body" *ngIf="reservationdata && inndata">
+    <div class="body-header">
+        <h1>¡Felicidades!</h1>
+        <h6>Reserva completada con éxito</h6>
+    </div>
+
+    <div class="body-info">
+        <p>Hemos recibido tus datos de reserva y pago. Te esperamos del {{ reservationdata.dateIn }} al {{ reservationdata.dateOut }} en {{inndata.name}}. ¡Esperamos que tengas un estadía adorable!</p>
+        <p>Recuerda que puedes contactar con tu anfitrión en cualquier momento, en la sección "Mis reservas" del menú.</p>
+        <p>Revisa tu recibo de pago en tu email.</p>
+    </div>
 <ion-icon src="https://image.flaticon.com/icons/svg/1996/1996003.svg"></ion-icon>
+<ion-button [routerLink]="'/home'" expand="full">Volver al inicio</ion-button>
+</section>
