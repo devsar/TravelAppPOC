@@ -3,7 +3,7 @@
   <section class="ion-padding">
     <app-reservation-brief [reservationdata]="reservationdata" [inndata]="inndata"></app-reservation-brief>
     <app-payment-checkout [reservationdata]="reservationdata"></app-payment-checkout>
-    <app-reservation-message></app-reservation-message>
+    <app-reservation-message [inndata]="inndata"></app-reservation-message>
     <app-payment-footer></app-payment-footer>
   </section>
 </ion-content>

@@ -1,3 +1,23 @@
-<p>
-  reservation-message works!
-</p>
+<section class="reservation-message-container" *ngIf="inndata">
+  <h1>Envíale un mensaje a tu anfitrión</h1>
+
+  <div class="reservation-message-header">
+    <div class="left">
+      <ion-img [src]="inndata.hostUser.profileImg"></ion-img>
+    </div>
+    <div class="right">
+      <h2> {{ inndata.hostUser.name }}</h2>
+      <h3> Anfitrión a cargo de {{ inndata.name }}</h3>
+      <h3> <ion-icon name="pin"></ion-icon> {{ inndata.city.name }}, {{ inndata.city.state }}</h3>
+    </div>
+  </div>
+  <div class="reservation-message">
+    <ion-item>
+        <ion-label position="floating">Mensaje</ion-label>
+        <ion-textarea 
+          rows="5"
+          placeholder="Cuentale lo que esperas del viaje, cuando pretendes llegar, pregúntale algo del alojamiento o simplemente preséntate.">
+        </ion-textarea>
+      </ion-item>        
+  </div>
+</section>
