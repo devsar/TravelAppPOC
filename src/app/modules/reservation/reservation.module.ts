@@ -9,7 +9,9 @@ import { ReservationDatesComponent } from 'src/app/components/reservation/reserv
 import { ReservationGuestsComponent } from 'src/app/components/reservation/reservation-guests/reservation-guests.component';
 import { ReservationFooterComponent } from 'src/app/components/reservation/reservation-footer/reservation-footer.component';
 import { ReservationHeaderModule } from '../reservation-header/reservation-header.module';
-
+import { DatePickerModule } from 'ionic4-date-picker';
+// tslint:disable-next-line: max-line-length
+import { ReservationDateSelectorComponent } from 'src/app/components/reservation/reservation-date-selector/reservation-date-selector.component';
 
 
 @NgModule({
@@ -18,13 +20,16 @@ import { ReservationHeaderModule } from '../reservation-header/reservation-heade
     InnBriefComponent,
     ReservationDatesComponent,
     ReservationGuestsComponent,
-    ReservationFooterComponent
+    ReservationFooterComponent,
+    ReservationDateSelectorComponent
   ],
+  entryComponents: [ReservationDateSelectorComponent],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ReservationHeaderModule,
+    DatePickerModule,
     RouterModule.forChild([
       {
         path: '',

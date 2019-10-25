@@ -1,15 +1,15 @@
 <section class="dates-container">
   <div class="in-date-container">
     <h6>Entrada</h6>
-    <ion-button size="small" fill="clear">Seleccionar fecha</ion-button>
-    <span>21/07/2020</span>
+    <ion-button (click)="presentPopover($event, true)" size="small" fill="clear">Seleccionar fecha</ion-button>
+    <span *ngIf="this.reservationdata.dateIn">{{this.reservationdata.dateIn}}</span>
   </div>
   <div class="separator">
     
   </div>
   <div class="out-date-container">
       <h6>Salida</h6>
-      <ion-button size="small" fill="clear">Seleccionar fecha</ion-button>
-      <span>29/07/2020</span>
+      <ion-button (click)="presentPopover($event, false)" size="small" fill="clear">Seleccionar fecha</ion-button>
+      <span *ngIf="this.reservationdata.dateOut">{{this.reservationdata.dateOut}}</span>
     </div>
 </section>

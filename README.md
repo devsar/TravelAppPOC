@@ -59,3 +59,18 @@ Estructura(Jerarquía) del proyecto:
     - THANK-YOU PAGE
         - THANK-YOU HEADER
         - THANK-YOU BODY
+
+
+// TODO:
+-   // Calendar dates
+-   Home cards
+-   City headers
+-   Explorar el espacio popup
+-   Pament method form
+-   Home searchbar filter cities
+-   Inn resume cards
+-   Complete mock data
+-   Add icons in inn-brief
+-   Improve icons in inn-services
+-   Change marker with wicrcle in inn-location map
+-   Manage reservation fees in typescript

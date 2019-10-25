@@ -2,7 +2,7 @@
   <app-reservation-header [paso]="2" [titulo]="'Datos de la reserva'"></app-reservation-header>
   <section class="ion-padding">
     <app-inn-brief [inndata]="inndata"></app-inn-brief>
-    <app-reservation-dates></app-reservation-dates>
+    <app-reservation-dates (propagar)="updateReservationDates($event)"></app-reservation-dates>
     <app-reservation-guests (propagar)="updateReservationGuests($event)" [inndata]="inndata"></app-reservation-guests>
     <app-reservation-footer [inndata]="inndata" [reservationdata]="reservationdata"></app-reservation-footer>
   </section>

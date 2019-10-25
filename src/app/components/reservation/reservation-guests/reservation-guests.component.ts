@@ -11,7 +11,7 @@ export class ReservationGuestsComponent implements OnInit {
 
   @Output() propagar = new EventEmitter<Reservation>();
 
-  reservationData: Reservation = {
+  reservationdata: Reservation = {
     id: 0,
     dateIn: '',
     dateOut: '',
@@ -29,38 +29,38 @@ export class ReservationGuestsComponent implements OnInit {
   ngOnInit() {}
 
   getGuestsQty(): number {
-    return this.reservationData.adults + this.reservationData.children;
+    return this.reservationdata.adults + this.reservationdata.children;
   }
 
   addAdultos(): void {
-    this.reservationData.adults++;
+    this.reservationdata.adults++;
     this.emitir();
   }
   removeAdultos(): void {
-    if(this.reservationData.adults > 0 ) {
-      this.reservationData.adults--;
+    if(this.reservationdata.adults > 0 ) {
+      this.reservationdata.adults--;
     }
     this.emitir();
   }
 
   addChildren(): void {
-    this.reservationData.children++;
+    this.reservationdata.children++;
     this.emitir();
   }
   removeChildren(): void {
-    if (this.reservationData.children > 0 ) {
-      this.reservationData.children--;
+    if (this.reservationdata.children > 0 ) {
+      this.reservationdata.children--;
     }
     this.emitir();
   }
 
   checkErrors(): boolean {
-    return this.reservationData.children + this.reservationData.adults > this.inndata.capacity;
+    return this.reservationdata.children + this.reservationdata.adults > this.inndata.capacity;
   }
 
   emitir() {
-    console.log("emitiendo");
-    this.propagar.emit(this.reservationData);
+    console.log('emitiendo guests');
+    this.propagar.emit(this.reservationdata);
   }
 
 }

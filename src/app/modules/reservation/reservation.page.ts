@@ -47,4 +47,9 @@ export class ReservationPage implements OnInit {
       this.reservationdata.children = data.children;
     }
 
+    updateReservationDates(data: Reservation): void {
+      this.reservationdata.dateIn = data.dateIn;
+      this.reservationdata.dateOut = data.dateOut;
+    }
+
 }
