@@ -70,8 +70,8 @@ Estructura(Jerarquía) del proyecto:
 -   Home searchbar filter cities
 -   // Inn resume cards
 -   Complete mock data
--   Add icons in inn-brief
+-   // Add icons in inn-brief
 -   Improve icons in inn-services
--   Change marker with wicrcle in inn-location map
+-   Change marker with circle in inn-location map
 -   Manage reservation fees in typescript
--   Home Topbar
+-   // Home Topbar

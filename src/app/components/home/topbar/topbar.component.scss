@@ -1,0 +1,11 @@
+ion-toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    ion-img {
+        margin-right: 24px;
+        width: 35px;
+    }
+    color: #f27fa3;
+}
