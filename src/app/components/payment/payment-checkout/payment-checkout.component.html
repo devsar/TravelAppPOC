@@ -1,20 +1,22 @@
 <section class="payment-checkout-container">
   <button class="pay-method" expand="full">Método de pago <ion-icon name="arrow-round-forward"></ion-icon></button>
   <div class="checkout-table" *ngIf="reservationdata">
-    <div class="row">
+    <div class="row detail" *ngIf="detailsShown">
       <div class="left">Precio por noche: <ion-button (click)="presentAlertPricePerNight()"  color="medium" fill="clear"><ion-icon name="information-circle"></ion-icon></ion-button></div>
       <div class="right">u$s {{ reservationdata.pricePerNight }}</div>
     </div>
-    <div class="row">
+    <div class="row detail" *ngIf="detailsShown">
       <div class="left">Cargos de servicio: <ion-button (click)="presentAlertPlatformCharge()" color="medium" fill="clear"><ion-icon name="information-circle"></ion-icon></ion-button></div>
       <div class="right">u$s {{ reservationdata.platformCharge }}</div>
     </div>
-    <div class="row">
+    <div class="row detail" *ngIf="detailsShown">
       <div class="left">Impuestos por estadía: <ion-button (click)="presentAlertTaxes()" color="medium" size="small" fill="clear"><ion-icon name="information-circle"></ion-icon></ion-button></div>
       <div class="right">u$s {{ reservationdata.taxes }}</div>
     </div>
     <div class="row total">
-        <div class="left column"><span>Total:</span> <span class="hide-details-button">Ocultar detalles</span></div>
+        <div class="left column"><span>Total:</span>
+          <span (click)="showDetails()" *ngIf="!detailsShown" class="hide-details-button">Mostrar detalles</span>
+          <span (click)="hideDetails()" *ngIf="detailsShown" class="hide-details-button">Ocultar detalles</span></div>
         <div class="right">u$s {{ reservationdata.pricePerNight + reservationdata.platformCharge + reservationdata.taxes }}</div>
       </div>
   </div>

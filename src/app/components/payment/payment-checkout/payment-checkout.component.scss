@@ -41,6 +41,14 @@
     font-weight: bold;
     font-size: 1.1em;
 }
+.row.detail {
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+.row.detail.hide {
+    opacity: 0;
+    display: none;
+}
 .left {
     display: flex;
     flex-direction: row;

@@ -12,6 +12,8 @@ export class PaymentCheckoutComponent implements OnInit {
 
   @Input() reservationdata: Reservation;
 
+  detailsShown = true;
+
   constructor(public alertController: AlertController) { }
 
   ngOnInit() {}
@@ -47,6 +49,18 @@ export class PaymentCheckoutComponent implements OnInit {
     });
 
     await alert.present();
+  }
+
+  showDetails() {
+    if (!this.detailsShown) {
+      this.detailsShown = true;
+    }
+  }
+
+  hideDetails() {
+    if (this.detailsShown) {
+      this.detailsShown = false;
+    }
   }
 
 }
