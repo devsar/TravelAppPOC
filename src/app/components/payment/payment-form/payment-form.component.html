@@ -1,0 +1,28 @@
+<section class="payment-form-conteiner">
+  <ion-button class="back" (click)="closeForm()" routerLinkActive="router-link-active"  routerLinkActive="router-link-active"  fill="clear" color="primary"><ion-icon name="close"></ion-icon></ion-button>
+
+  <h1>Pagar con</h1>
+  <h6>Moneda de pago: <span>USD</span></h6>
+
+  <ion-item class="ancho">
+    <ion-label position="floating">N° tarjeta</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <div class="fila">
+    <ion-item>
+      <ion-label position="floating">Exp. date DD/MM</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CVV</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cod. Postal</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+
+  <ion-button class="aceptar" (click)="closeForm()" expand="full">Agregar método de pago</ion-button>
+</section>

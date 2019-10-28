@@ -13,6 +13,7 @@ export class PaymentCheckoutComponent implements OnInit {
   @Input() reservationdata: Reservation;
 
   detailsShown = true;
+  formShown = false;
 
   constructor(public alertController: AlertController) { }
 
@@ -60,6 +61,18 @@ export class PaymentCheckoutComponent implements OnInit {
   hideDetails() {
     if (this.detailsShown) {
       this.detailsShown = false;
+    }
+  }
+
+  showPaymentForm() {
+    if (!this.formShown) {
+      this.formShown = true;
+    }
+  }
+
+  hidePaymentForm() {
+    if (this.formShown) {
+      this.formShown = false;
     }
   }
 

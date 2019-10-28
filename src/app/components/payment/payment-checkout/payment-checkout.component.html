@@ -1,5 +1,5 @@
 <section class="payment-checkout-container">
-  <button class="pay-method" expand="full">Método de pago <ion-icon name="arrow-round-forward"></ion-icon></button>
+  <button (click)="showPaymentForm()" class="pay-method" expand="full">Método de pago <ion-icon name="arrow-round-forward"></ion-icon></button>
   <div class="checkout-table" *ngIf="reservationdata">
     <div class="row detail" *ngIf="detailsShown">
       <div class="left">Precio por noche: <ion-button (click)="presentAlertPricePerNight()"  color="medium" fill="clear"><ion-icon name="information-circle"></ion-icon></ion-button></div>
@@ -21,3 +21,4 @@
       </div>
   </div>
 </section>
+<app-payment-form (propagar)="hidePaymentForm()" *ngIf="formShown"></app-payment-form>

@@ -9,6 +9,7 @@ import { PaymentCheckoutComponent } from 'src/app/components/payment/payment-che
 import { ReservationMessageComponent } from 'src/app/components/payment/reservation-message/reservation-message.component';
 import { PaymentFooterComponent } from 'src/app/components/payment/payment-footer/payment-footer.component';
 import { ReservationHeaderModule } from '../reservation-header/reservation-header.module';
+import { PaymentFormComponent } from 'src/app/components/payment/payment-form/payment-form.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ReservationHeaderModule } from '../reservation-header/reservation-heade
     PaymentCheckoutComponent,
     ReservationMessageComponent,
     PaymentFooterComponent,
+    PaymentFormComponent
   ],
   imports: [
     CommonModule,
