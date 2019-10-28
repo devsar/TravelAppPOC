@@ -65,10 +65,10 @@ Estructura(Jerarquía) del proyecto:
 -   // Calendar dates
 -   // Home cards
 -   // City headers
--   // Explorar el espacio popup
+-   Explorar el espacio popup
 -   Payment method form
 -   Home searchbar filter cities
--   Inn resume cards
+-   // Inn resume cards
 -   Complete mock data
 -   Add icons in inn-brief
 -   Improve icons in inn-services

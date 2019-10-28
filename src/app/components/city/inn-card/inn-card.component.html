@@ -5,18 +5,27 @@
     </ion-slide>
   </ion-slides>
   <ion-card-header>
-    <ion-card-subtitle>{{ inndata.innType.type }} en {{ inndata.city.name }} </ion-card-subtitle>
-    <ion-card-title> {{ inndata.name }} </ion-card-title>
-    <ion-card-subtitle class="rating">
-      <ion-icon name="star" *ngIf="inndata.rating >= 1"></ion-icon>
-      <ion-icon name="star" *ngIf="inndata.rating >= 2"></ion-icon>
-      <ion-icon name="star" *ngIf="inndata.rating >= 3"></ion-icon>
-      <ion-icon name="star" *ngIf="inndata.rating >= 4"></ion-icon>
-      <ion-icon name="star-outline" *ngIf="inndata.rating > 4 && inndata.rating <= 4.5"></ion-icon>
-      <ion-icon name="star-half" *ngIf="inndata.rating > 4.5 && inndata.rating < 5"></ion-icon>
-      <ion-icon name="star" *ngIf="inndata.rating == 5"></ion-icon>
-      <span>&nbsp; {{ inndata.ratingQty }} evalucaciones</span>
-    </ion-card-subtitle>
+    <div class="left">
+      <ion-card-subtitle>{{ inndata.innType.type }} en {{ inndata.city.name }} </ion-card-subtitle>
+      <ion-card-title> {{ inndata.name }} </ion-card-title>
+      <ion-card-subtitle class="rating">
+        <ion-icon name="star" *ngIf="inndata.rating >= 1"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating >= 2"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating >= 3"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating >= 4"></ion-icon>
+        <ion-icon name="star-outline" *ngIf="inndata.rating > 4 && inndata.rating <= 4.5"></ion-icon>
+        <ion-icon name="star-half" *ngIf="inndata.rating > 4.5 && inndata.rating < 5"></ion-icon>
+        <ion-icon name="star" *ngIf="inndata.rating == 5"></ion-icon>
+        <span>&nbsp; {{ inndata.ratingQty }} evalucaciones</span>
+      </ion-card-subtitle>
+    </div>
+    <div class="right">
+      <div class="data-container">
+        <h1>$ {{ inndata.price }}</h1>
+        <span class="label">por noche</span>
+      </div>        
+    </div>
+   
   </ion-card-header>
   <ion-card-content>
     <div class="data-container">

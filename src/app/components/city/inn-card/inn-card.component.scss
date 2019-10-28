@@ -8,12 +8,24 @@ ion-card-content {
     justify-content: space-around;
     align-items: flex-start;
 }
+ion-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .right {
+        flex-shrink: 0;
+    }
+}
 .data-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: #000;
+}
+.data-container:first-child{
+    align-self: center;
 }
 ion-icon {
     font-size: 30px;
