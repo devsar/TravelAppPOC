@@ -71,7 +71,8 @@ Estructura(Jerarquía) del proyecto:
 -   // Inn resume cards
 -   Complete mock data
 -   // Add icons in inn-brief
--   Improve icons in inn-services
+-   // Improve icons in inn-services
 -   Change marker with circle in inn-location map
 -   Manage reservation fees in typescript
 -   // Home Topbar
+-   Add info alerts in payment
