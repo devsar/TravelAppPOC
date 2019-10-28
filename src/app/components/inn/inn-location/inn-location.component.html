@@ -9,15 +9,16 @@
       [latitude]="inndata.locationCoor.lat"
       [longitude]="inndata.locationCoor.long"
       [disableDefaultUI]="true"
-      [zoom]="8"
+      [zoom]="14"
       [mapDraggable]="draggable"
       >
-      <agm-marker
+      <agm-circle  
+        [radius]="300"
+        [fillColor]="'red'"
         [latitude]="inndata.locationCoor.lat"
-        [longitude]="inndata.locationCoor.long"
-        >
-          <agm-info-window>{{ inndata.name }}</agm-info-window>
-      </agm-marker>
+        [longitude]="inndata.locationCoor.long">
+        <agm-info-window>{{ inndata.name }}</agm-info-window>
+      </agm-circle>
     </agm-map>
     <ion-fab-button *ngIf="!zoomed" (click)="zoomIn()">
       <ion-icon name="qr-scanner"></ion-icon>
