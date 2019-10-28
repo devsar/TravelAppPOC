@@ -19,6 +19,7 @@ export class ReservationFooterComponent implements OnInit {
 
   go() {
     if (!this.checkErrrors()) {
+      this.setCharges();
       this.router.navigateByUrl('/inn/' + this.inndata.id + '/book/pay', { state:
         {
           inndata: this.inndata,
@@ -29,6 +30,12 @@ export class ReservationFooterComponent implements OnInit {
 
   checkErrrors() {
     return this.reservationdata.adults + this.reservationdata.children > this.inndata.capacity;
+  }
+
+  setCharges() {
+    this.reservationdata.pricePerNight = this.inndata.price;
+    this.reservationdata.platformCharge = this.inndata.price * 0.1;
+    this.reservationdata.taxes = 2.25;
   }
 
 }
