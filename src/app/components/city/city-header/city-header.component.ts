@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-city-header',
@@ -9,8 +10,12 @@ export class CityHeaderComponent implements OnInit {
 
   @Input() citydata;
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit() {
+  }
+
+  goBack() {
+    this.location.back(); // <-- go back to previous location on cancel
   }
 }

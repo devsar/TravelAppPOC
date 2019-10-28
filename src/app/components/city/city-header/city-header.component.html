@@ -1,5 +1,5 @@
 <header>
-  <ion-button [routerLink]="'/home'" routerLinkActive="router-link-active"  fill="clear" color="light"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  <ion-button (click)="goBack()" routerLinkActive="router-link-active"  fill="clear" color="light"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
   <h1 class="city-name">
     {{ citydata.name }}
   </h1>

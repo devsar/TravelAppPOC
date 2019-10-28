@@ -1,5 +1,5 @@
 <section *ngIf="inndata">
-  
-  <ion-button>Explorar espacio</ion-button>
+  <ion-button class="back" (click)="goBack()" routerLinkActive="router-link-active"  routerLinkActive="router-link-active"  fill="clear" color="light"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  <ion-button class="explore">Explorar espacio</ion-button>
   <ion-img [src]="inndata.imgs[0]"></ion-img>
 </section>
