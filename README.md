@@ -73,6 +73,6 @@ Estructura(Jerarquía) del proyecto:
 -   // Add icons in inn-brief
 -   // Improve icons in inn-services
 -   Change marker with circle in inn-location map
--   Manage reservation fees in typescript
+-   // Manage reservation fees in typescript
 -   // Home Topbar
--   Add info alerts in payment
+-   // Add info alerts in payment
