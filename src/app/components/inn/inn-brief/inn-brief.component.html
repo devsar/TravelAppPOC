@@ -1,6 +1,6 @@
 <section *ngIf="inndata">
   <h6> {{ inndata.innType.type }} en <span [routerLink]="['../../city/' + inndata.city.slug]">{{ inndata.city.name }}</span></h6>
-  <h1>{{ inndata.name }}</h1>
+  <h1 class="title">{{ inndata.name }}</h1>
   <div class="inn-brief-numbers">
     <div class="inn-brief-number">
       <h2> {{ inndata.capacity }} </h2>

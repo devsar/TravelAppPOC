@@ -1,5 +1,6 @@
 <section *ngIf="inndata">
   <h1>Opiniones</h1>
+  <h5>{{ inndata.rating }} <ion-icon name="star"></ion-icon> - {{ inndata.ratingQty }} opiniones</h5>
 
   <app-inn-review *ngFor="let review of inndata.reviews" [reviewdata]="review"></app-inn-review>
 </section>

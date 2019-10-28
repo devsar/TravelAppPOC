@@ -5,7 +5,7 @@
       <img [src]="inndata.hostUser.profileImg" />
       <ion-card-header>
         <ion-card-subtitle>{{ inndata.city.name }}, {{ inndata.city.state }}, Brasil</ion-card-subtitle>
-        <ion-card-title>{{ inndata.hostUser.name }}</ion-card-title>
+        <ion-card-title color="primary">{{ inndata.hostUser.name }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <ion-card-subtitle>{{ inndata.hostUser.bioTitle }}</ion-card-subtitle>
@@ -15,7 +15,7 @@
          Idiomas: <span *ngFor="let lan of inndata.hostUser.languages">{{ lan }}, </span>
          Índice de respuestas: <span>{{ inndata.hostUser.responseRate }}</span>
          <div *ngIf="inndata.hostUser.verifiedUser">
-           Usuario verificado: <ion-icon name="checkmark-circle"></ion-icon>
+           Usuario verificado: <ion-icon color="primary" name="checkmark-circle"></ion-icon>
          </div>
       </ion-card-content>
       

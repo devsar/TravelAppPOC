@@ -1,9 +1,23 @@
+
+section {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #da4473;
+}
+h1.title {
+    font-weight: 600;
+    padding: 0 6px;
+    font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    color: #da4473;
+}
 .inn-brief-numbers {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-start;
+    color: #da4473;
 }
 .inn-brief-number {
     display: flex;
@@ -14,6 +28,9 @@
     ion-icon {
         font-size: 40px;
     }
+}
+.inn-description {
+    margin: 18px 0;
 }
 .inn-brief-number h2,
 .inn-brief-number h6{
