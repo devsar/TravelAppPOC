@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { CiudadesProviderService } from 'src/app/services/ciudades-provider/ciudades-provider.service';
+import { Ciudad } from 'src/app/types/ciudad';
 
 @Component({
   selector: 'app-home-searchbar',
@@ -7,8 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeSearchbarComponent implements OnInit {
 
-  constructor() { }
+  @Output() propagar = new EventEmitter<Ciudad[]>();
+
+  searchStr = '';
+
+  constructor(private cpService: CiudadesProviderService) { }
 
   ngOnInit() {}
+
+  filterCities() {
+    setTimeout( () => {
+      this.emitir(this.cpService.filterCities(this.searchStr));
+    }, 500);
+  }
+
+  emitir(filteredCities: Ciudad[]) {
+    console.log('emitiendo cities filtradas');
+    this.propagar.emit(filteredCities);
+  }
 
 }

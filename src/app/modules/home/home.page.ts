@@ -9,7 +9,10 @@ import { CiudadesProviderService } from 'src/app/services/ciudades-provider/ciud
 })
 export class HomePage implements OnInit {
 
+
   ciudades: Ciudad[] = [];
+
+  searchbar = document.querySelector('ion-searchbar');
 
   constructor(private cpService: CiudadesProviderService) {}
 
@@ -21,5 +24,10 @@ export class HomePage implements OnInit {
     setTimeout(() => {
       this.getCities();
     }, 1000);
+  }
+
+  updateCities(data: Ciudad[]) {
+    console.log(data);
+    this.ciudades = data;
   }
 }

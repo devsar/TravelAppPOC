@@ -66,13 +66,14 @@ Estructura(Jerarquía) del proyecto:
 -   // Home cards
 -   // City headers
 -   // Explorar el espacio popup
--   Payment method form
--   Home searchbar filter cities
+-   // Payment method form
+-   // Home searchbar filter cities
 -   // Inn resume cards
 -   Complete mock data
 -   // Add icons in inn-brief
 -   // Improve icons in inn-services
--   Change marker with circle in inn-location map
+-   // Change marker with circle in inn-location map
 -   // Manage reservation fees in typescript
 -   // Home Topbar
 -   // Add info alerts in payment
+-   // Manage dates properly

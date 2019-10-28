@@ -1,1 +1,1 @@
-<ion-searchbar placeholder="Encuentra tu destino ideal" animated color="primary" showCancelButton="focus"></ion-searchbar>
+<ion-searchbar (ionInput)="filterCities($event)" [(ngModel)]="searchStr" placeholder="Encuentra tu destino ideal" animated color="primary" showCancelButton="focus"></ion-searchbar>

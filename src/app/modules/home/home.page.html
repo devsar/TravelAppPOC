@@ -4,7 +4,7 @@
 
 <ion-content>
   <div class="ion-padding">
-    <app-home-searchbar></app-home-searchbar>
+    <app-home-searchbar (propagar)="updateCities($event)"></app-home-searchbar>
     <div *ngIf="ciudades.length">
       <app-tarjeta-ciudad [routerLink]="['../city/' + ciudad.slug]" *ngFor="let ciudad of ciudades" [citydata]="ciudad"></app-tarjeta-ciudad>
     </div>
