@@ -15,12 +15,12 @@ export const CIUDADES: Ciudad[] = [
         id: 2,
         name:
         'Rio de Janeiro',
-        state: `
-        Es uno de los principales centros económicos, de recursos culturales y financieros del Brasil. Es conocida internacionalmente por sus iconos culturales y paisajes, como el Pan de Azúcar, la estatua del Cristo Redentor (una de las siete maravillas del mundo moderno), las playas de Copacabana e Ipanema, el Estadio de Maracaná, el Parque Nacional de Tijuca (el mayor bosque urbano del mundo), la Quinta da Boa Vista, la isla de Paquetá, las Fiestas de Fin de Año en Copacabana y la celebración del Carnaval
-        `,
+        state: 'Rio de Janeiro',
         // tslint:disable-next-line: max-line-length
         img: 'https://www.avianca.com/content/dam/avianca_new/destinos/semana/gig/1-porque-visitarla/destino-rio-de-janeiro-brazil-para-conocer-el-cerro-del-corcovado.jpg',
-        description: 'Hermosa ciudad',
+        description: `
+        Es uno de los principales centros económicos, de recursos culturales y financieros del Brasil. Es conocida internacionalmente por sus iconos culturales y paisajes, como el Pan de Azúcar, la estatua del Cristo Redentor (una de las siete maravillas del mundo moderno), las playas de Copacabana e Ipanema, el Estadio de Maracaná, el Parque Nacional de Tijuca (el mayor bosque urbano del mundo), la Quinta da Boa Vista, la isla de Paquetá, las Fiestas de Fin de Año en Copacabana y la celebración del Carnaval
+        `,
         slug: 'rio-de-janeiro'
     },
     {
