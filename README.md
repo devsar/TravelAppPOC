@@ -79,3 +79,5 @@ Estructura(Jerarquía) del proyecto:
 -   // Manage dates properly
 -   Add city header features
 -   Check for dates in reservation page
+-   Add skeletons: city card, inn-card, cit header, inn page, payment and reservation
+-   Add spinner processing payment

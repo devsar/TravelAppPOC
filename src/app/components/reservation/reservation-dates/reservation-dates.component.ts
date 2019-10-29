@@ -43,7 +43,7 @@ export class ReservationDatesComponent implements OnInit {
     });
 
     popover.onDidDismiss().then((dataReturned) => {
-      if (dataReturned !== null) {
+      if (dataReturned !== null && dataReturned.data !== undefined) {
         if (esInicio) {
           this.reservationdata.dateIn = dataReturned.data;
           this.displayDateIn = this.dProvider.displayDate(this.reservationdata.dateIn);
