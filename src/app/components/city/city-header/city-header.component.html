@@ -1,9 +1,20 @@
 <header>
-  <ion-button (click)="goBack()" routerLinkActive="router-link-active"  fill="clear" color="light"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+  <ion-button (click)="goBack()" routerLinkActive="router-link-active"  fill="clear" color="light" class="backButton"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
   <h1 class="city-name">
     {{ citydata.name }}
   </h1>
+  <ion-button (click)="toggleInfo()" fill="clear" color="light" class="infoButton"><ion-icon name="information-circle"></ion-icon></ion-button>
   <div class="city-image" *ngIf="citydata">
     <ion-img [src]="citydata.img"></ion-img>
   </div>
 </header>
+<div class="city-info ion-padding" *ngIf="showingInfo">
+  <h1>Información de la ciudad:</h1>
+  <p>{{ citydata.description }}</p>
+  <h1>Distancia desde Buenos Aires:</h1>
+  <p>{{ citydata.distanceFromBuenosAires }} km</p>
+  <h1>Vieaje estimado en auto:</h1>
+  <p>{{ citydata.distanceFromBuenosAires / 80 }} horas desde Buenos Aires</p>
+  <h1>Vieaje estimado en Avión:</h1>
+  <p>{{ citydata.distanceFromBuenosAires / 880 }} horas desde Buenos Aires</p>
+</div>

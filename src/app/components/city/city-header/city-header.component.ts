@@ -12,10 +12,16 @@ export class CityHeaderComponent implements OnInit {
 
   constructor(private location: Location) { }
 
+  showingInfo = false;
+
   ngOnInit() {
   }
 
   goBack() {
     this.location.back(); // <-- go back to previous location on cancel
+  }
+
+  toggleInfo() {
+    this.showingInfo = !this.showingInfo;
   }
 }
