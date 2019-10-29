@@ -39,7 +39,9 @@ export class ReservationFooterComponent implements OnInit {
   }
 
   setCharges() {
-    this.reservationdata.pricePerNight = this.inndata.price;
+    const oneDay = 1000 * 60 * 60 * 24;
+    const reservationDays = (this.reservationdata.dateOut.getTime() - this.reservationdata.dateIn.getTime()) / oneDay;
+    this.reservationdata.pricePerNight = this.inndata.price * reservationDays;
     this.reservationdata.platformCharge = this.inndata.price * 0.1;
     this.reservationdata.taxes = 2.25;
   }
