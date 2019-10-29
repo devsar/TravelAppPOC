@@ -29,6 +29,8 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+/android
+android/
 android/.gitignore
 android/build.gradle
 android/capacitor.settings.gradle
