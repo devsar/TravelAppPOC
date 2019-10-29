@@ -1,5 +1,5 @@
 <section class="reservation-footer-container" *ngIf="reservationdata && inndata">
     <ion-button [disabled]="checkErrrors() ? 'true' : 'false'" expand="full" (click)="go()">
-        Continuar - {{ inndata.price }} - {{ reservationdata.adults + reservationdata.children }}
+        Continuar - ${{ inndata.price }}/n - {{ reservationdata.adults }} ad. y {{ reservationdata.children }} niños
     </ion-button>
 </section>
