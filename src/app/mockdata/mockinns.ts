@@ -10,7 +10,7 @@ import { HOSTUSERS } from './mockhostusers';
 export const INNS: Inn[] = [
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -75,7 +75,7 @@ export const INNS: Inn[] = [
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -149,7 +149,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -291,7 +291,7 @@ export const INNS: Inn[] = [
     },
     {
         id: 5,
-        hostUser: HOSTUSERS[4],
+        hostUser: HOSTUSERS[14],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -579,7 +579,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 9,
-        hostUser: HOSTUSERS[8],
+        hostUser: HOSTUSERS[18],
         name: 'VISTA para el Cristo - a una cuadra de la PLAYA',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'sao-paulo'),
@@ -947,7 +947,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
@@ -1080,7 +1080,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
@@ -1156,7 +1156,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 7,
-        hostUser: HOSTUSERS[6],
+        hostUser: HOSTUSERS[16],
         name: 'Unmissable Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
@@ -1226,7 +1226,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
@@ -1372,7 +1372,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'rio-de-janeiro'),
@@ -1446,7 +1446,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -1511,7 +1511,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -1585,7 +1585,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -2383,7 +2383,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'salvador'),
@@ -2445,7 +2445,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 5,
-        hostUser: HOSTUSERS[4],
+        hostUser: HOSTUSERS[14],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -2516,7 +2516,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'salvador'),
@@ -2592,7 +2592,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 7,
-        hostUser: HOSTUSERS[6],
+        hostUser: HOSTUSERS[16],
         name: 'Unmissable Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'salvador'),
@@ -2662,7 +2662,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'salvador'),
@@ -2733,7 +2733,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 9,
-        hostUser: HOSTUSERS[8],
+        hostUser: HOSTUSERS[18],
         name: 'VISTA para el Cristo - a una cuadra de la PLAYA',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'salvador'),
@@ -2808,7 +2808,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'salvador'),
@@ -2882,7 +2882,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -2947,7 +2947,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -3021,7 +3021,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -3526,7 +3526,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'florianopolis'),
@@ -3819,7 +3819,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'curitiba'),
@@ -3881,7 +3881,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 5,
-        hostUser: HOSTUSERS[4],
+        hostUser: HOSTUSERS[14],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -3952,7 +3952,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'curitiba'),
@@ -4028,7 +4028,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 7,
-        hostUser: HOSTUSERS[6],
+        hostUser: HOSTUSERS[16],
         name: 'Unmissable Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'curitiba'),
@@ -4098,7 +4098,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'curitiba'),
@@ -4318,7 +4318,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -4383,7 +4383,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -4457,7 +4457,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -4887,7 +4887,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 9,
-        hostUser: HOSTUSERS[8],
+        hostUser: HOSTUSERS[18],
         name: 'VISTA para el Cristo - a una cuadra de la PLAYA',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'fortaleza'),
@@ -4962,7 +4962,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'fortaleza'),
@@ -5255,7 +5255,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'natal'),
@@ -5317,7 +5317,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 5,
-        hostUser: HOSTUSERS[4],
+        hostUser: HOSTUSERS[14],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -5388,7 +5388,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'natal'),
@@ -5464,7 +5464,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 7,
-        hostUser: HOSTUSERS[6],
+        hostUser: HOSTUSERS[16],
         name: 'Unmissable Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'natal'),
@@ -5534,7 +5534,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'natal'),
@@ -5754,7 +5754,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -5819,7 +5819,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -5893,7 +5893,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -6398,7 +6398,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'trancoso'),
@@ -6691,7 +6691,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'jericoacoara'),
@@ -6753,7 +6753,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 5,
-        hostUser: HOSTUSERS[4],
+        hostUser: HOSTUSERS[14],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -6824,7 +6824,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'jericoacoara'),
@@ -6900,7 +6900,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 7,
-        hostUser: HOSTUSERS[6],
+        hostUser: HOSTUSERS[16],
         name: 'Unmissable Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'jericoacoara'),
@@ -6970,7 +6970,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'jericoacoara'),
@@ -7041,7 +7041,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 9,
-        hostUser: HOSTUSERS[8],
+        hostUser: HOSTUSERS[18],
         name: 'VISTA para el Cristo - a una cuadra de la PLAYA',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'jericoacoara'),
@@ -7190,7 +7190,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -7255,7 +7255,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -7329,7 +7329,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -7834,7 +7834,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'belo-horizonte'),
@@ -8127,7 +8127,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'buzios'),
@@ -8189,7 +8189,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 5,
-        hostUser: HOSTUSERS[4],
+        hostUser: HOSTUSERS[14],
         name: 'Boemia carioca',
         // tslint:disable-next-line: max-line-length
         description: 'Meu apartamento é antigo, simples e bem tranquilo. Fica a 5 minutos do Aterro e Praia do Flamengo. Em toda a redondeza do prédio existem Bancos, Restaurantes, Fastfoods, Cinema, Supermercados, Farmácias, Pontos de Ônibus e Estação de Metrô. Você vai amar meu espaço por causa da localização, comércio muito variado e a tranquilidade do apartamento. Meu espaço é destinado para hóspedes que venham à trabalho , estudos, concursos públicos ou eventos importantes.',
@@ -8260,7 +8260,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'buzios'),
@@ -8336,7 +8336,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 7,
-        hostUser: HOSTUSERS[6],
+        hostUser: HOSTUSERS[16],
         name: 'Unmissable Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'buzios'),
@@ -8406,7 +8406,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'buzios'),
@@ -8626,7 +8626,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -8691,7 +8691,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
         },
     {
         id: 2,
-        hostUser: HOSTUSERS[1],
+        hostUser: HOSTUSERS[11],
         name: 'Habitación en el corazón de Copacabana',
         // tslint:disable-next-line: max-line-length
         description: 'Copa del mundo: U$ 2.500 por semana - U$ 9,000 el mes entero. Navidad/ Año Nuevo (7 o 10 días): U$ 2.000 - U$ 2.500. Apartamento limpio y agradable muy bien ubicado en Copanema, exactamente entre Copacabana e Ipanema. ¡Alquiler y mantenimiento a cargo del propietario! Ubicación privilegiada, está ubicado dos cuadras de la playa de Copacabana, a 5 cuadras de la playa de Ipanema y a 7 cuadras de la playa de Arpoador. El apartamento (email ocultado) Ferreira, a media cuadra de la General Osório metro/metro de la estación y la estación de bicicletas de Itaú. Cerca de restaurantes, entretenimiento, compras y vida nocturna. Muy cerca de la Plaza de General Osório, donde hay comida local y frutas que los martes, y mercadillo de artesanías los dominogs. 1 cama doble, aire acondicionado, 10 MB alta velocidad Internet inalámbrico, cocina, fogones, Mini-Bar. Ideal para 1-2 personas, opcional colchón de aire para 3-4 personas. Muy seguro. Es una zona acomodada, por lo que siempre hay policía en la entrada de la estación de metro que está a media cuadra de distancia y también tiene 3 cuadras de la estación de policía. Portero 24/7. No dude en contactar para cualquier información.',
@@ -8765,7 +8765,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -9195,7 +9195,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 9,
-        hostUser: HOSTUSERS[8],
+        hostUser: HOSTUSERS[18],
         name: 'VISTA para el Cristo - a una cuadra de la PLAYA',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'manaos'),
@@ -9270,7 +9270,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 10,
-        hostUser: HOSTUSERS[9],
+        hostUser: HOSTUSERS[19],
         name: 'Piso de 2 dormitorios - vista y garaje',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'manaos'),
@@ -9563,7 +9563,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 4,
-        hostUser: HOSTUSERS[3],
+        hostUser: HOSTUSERS[13],
         name: 'Estudio entre Ipanema/Copacabana',
         description: 'Dormitorio con cama doble, armario, TV por cable, aire acondicionado y conexión wi-fi. Situado en una tranquila calle en el edificio, en el corazón de Copacabana. Menos de 5 minutos del metro, a dos cuadras de la playa. Supermercados, bancos, tiendas cerca.',
         city: CIUDADES.find( (el) => el.slug === 'foz-do-iguacu'),
@@ -9696,7 +9696,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 6,
-        hostUser: HOSTUSERS[5],
+        hostUser: HOSTUSERS[15],
         name: 'Hermoso apartamento a pocos pasos de la playa Copa',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'foz-do-iguacu'),
@@ -9842,7 +9842,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 8,
-        hostUser: HOSTUSERS[7],
+        hostUser: HOSTUSERS[17],
         name: '2-Room apartment in Copacabana',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'foz-do-iguacu'),
@@ -10062,7 +10062,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 1,
-        hostUser: HOSTUSERS[0],
+        hostUser: HOSTUSERS[10],
         name: 'FLAMENGO/LARGO DO MACHADO - ÓTIMA LOCALIZAÇÃO',
         // tslint:disable-next-line: max-line-length
         description: 'Apartamento charmoso,aconchegante e confortável, no coração da Lapa, com vista ampla para um dos principais cartões-postais da cidade,os Arcos da Lapa. Localizado em prédio tradicional,ladeado pelos principais bares, restaurantes e casas de shows da boemia carioca. Próximo a teatros, museus, atrações culturais e históricas. Ponto central da cidade, há poucos minutos das principais praias da zona sul carioca e do Sambódromo, onde acontecem os desfiles das Escolas de Samba no Carnaval.',
@@ -10201,7 +10201,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 3,
-        hostUser: HOSTUSERS[2],
+        hostUser: HOSTUSERS[12],
         name: 'The penthouse terrace, a paradise in Copacabana',
         description: `Introducing the rooftop terrace, a double room with en-suite bathroom, located at the 2nd. floor of my own place, in the heart of Copacabana. What makes it special? PRIVACY, the top floor is basically for guests; SAFETY, we are on a residential building with doormen 24 hours a day; UNBEATABLE LOCATION, very close to subway, shops, bars, beach; BEST ADVICE: insider's tips from a local host who loves showing Rio in safety; FULLY EQUIPPED; A REALLY QUIET PLACE; GREAT VIEWS; POOL AND OUTDOOR AREAS.
 
@@ -10631,7 +10631,7 @@ Copacabana é um dos bairros mais incríveis do Rio por que basta sair do prédi
     },
     {
         id: 9,
-        hostUser: HOSTUSERS[8],
+        hostUser: HOSTUSERS[18],
         name: 'VISTA para el Cristo - a una cuadra de la PLAYA',
         description: '',
         city: CIUDADES.find( (el) => el.slug === 'porto-seguro'),
