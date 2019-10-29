@@ -10,6 +10,7 @@ import { ReservationMessageComponent } from 'src/app/components/payment/reservat
 import { PaymentFooterComponent } from 'src/app/components/payment/payment-footer/payment-footer.component';
 import { ReservationHeaderModule } from '../reservation-header/reservation-header.module';
 import { PaymentFormComponent } from 'src/app/components/payment/payment-form/payment-form.component';
+import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
 
 
 @NgModule({
@@ -33,5 +34,6 @@ import { PaymentFormComponent } from 'src/app/components/payment/payment-form/pa
       }
     ]),
   ],
+  providers: [DateProviderService]
 })
 export class PaymentModule { }

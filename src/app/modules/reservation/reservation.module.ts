@@ -12,6 +12,7 @@ import { ReservationHeaderModule } from '../reservation-header/reservation-heade
 import { DatePickerModule } from 'ionic4-date-picker';
 // tslint:disable-next-line: max-line-length
 import { ReservationDateSelectorComponent } from 'src/app/components/reservation/reservation-date-selector/reservation-date-selector.component';
+import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
 
 
 @NgModule({
@@ -37,5 +38,6 @@ import { ReservationDateSelectorComponent } from 'src/app/components/reservation
       }
     ]),
   ],
+  providers: [DateProviderService],
 })
 export class ReservationModule { }

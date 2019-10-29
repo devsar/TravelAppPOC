@@ -3,6 +3,7 @@ import { Inn } from 'src/app/types/inn';
 import { Reservation } from 'src/app/types/reservation';
 import { WEEKDAYS } from 'src/app/mockdata/weekdays';
 import { MONTHS } from 'src/app/mockdata/months';
+import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
 
 @Component({
   selector: 'app-thank-you-body',
@@ -14,19 +15,17 @@ export class ThankYouBodyComponent implements OnInit {
   @Input() inndata: Inn;
   @Input() reservationdata: Reservation;
 
-  constructor() { }
+  constructor(
+    private dProvider: DateProviderService,
+  ) { }
 
   ngOnInit() {}
 
   displayDateIn(): string {
-    const dIn = this.reservationdata.dateIn;
-    // tslint:disable-next-line: max-line-length
-    return WEEKDAYS[dIn.getDay()] + ', ' + dIn.getDate() + ' de ' +  MONTHS[dIn.getMonth()] + ' de ' + dIn.getFullYear();
+    return  this.dProvider.displayDate(this.reservationdata.dateIn);
   }
   displayDateOut(): string {
-    const dOut = this.reservationdata.dateOut;
-    // tslint:disable-next-line: max-line-length
-    return WEEKDAYS[dOut.getDay()] + ', ' + dOut.getDate() + ' de ' +  MONTHS[dOut.getMonth()] + ' de ' + dOut.getFullYear();
+    return  this.dProvider.displayDate(this.reservationdata.dateOut);
   }
 
 }

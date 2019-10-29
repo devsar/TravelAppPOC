@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { ThankYouPage } from './thank-you.page';
 import { ThankYouHeaderComponent } from 'src/app/components/thank-you/thank-you-header/thank-you-header.component';
 import { ThankYouBodyComponent } from 'src/app/components/thank-you/thank-you-body/thank-you-body.component';
+import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
 
 
 
@@ -22,5 +23,6 @@ import { ThankYouBodyComponent } from 'src/app/components/thank-you/thank-you-bo
       }
     ]),
   ],
+  providers: [DateProviderService]
 })
 export class ThankYouModule { }

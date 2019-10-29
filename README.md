@@ -69,7 +69,7 @@ Estructura(Jerarquía) del proyecto:
 -   // Payment method form
 -   // Home searchbar filter cities
 -   // Inn resume cards
--   Complete mock data
+-   // Complete mock data
 -   // Add icons in inn-brief
 -   // Improve icons in inn-services
 -   // Change marker with circle in inn-location map
@@ -77,3 +77,5 @@ Estructura(Jerarquía) del proyecto:
 -   // Home Topbar
 -   // Add info alerts in payment
 -   // Manage dates properly
+-   Add city header features
+-   Check for dates in reservation page

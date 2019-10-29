@@ -2,8 +2,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { ReservationDateSelectorComponent } from '../reservation-date-selector/reservation-date-selector.component';
 import { Reservation } from 'src/app/types/reservation';
-import { MONTHS } from 'src/app/mockdata/months';
-import { WEEKDAYS } from 'src/app/mockdata/weekdays';
+import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
 
 @Component({
   selector: 'app-reservation-dates',
@@ -14,7 +13,10 @@ export class ReservationDatesComponent implements OnInit {
 
   @Output() propagar = new EventEmitter<Reservation>();
 
-  constructor(public popoverController: PopoverController) { }
+  constructor(
+    public popoverController: PopoverController,
+    private dProvider: DateProviderService,
+    ) { }
 
   displayDateIn: string;
   displayDateOut: string;
@@ -44,12 +46,10 @@ export class ReservationDatesComponent implements OnInit {
       if (dataReturned !== null) {
         if (esInicio) {
           this.reservationdata.dateIn = dataReturned.data;
-          const d = this.reservationdata.dateIn;
-          this.displayDateIn = WEEKDAYS[d.getDay()] + ', ' + d.getDate() + ' de ' +  MONTHS[d.getMonth()] + ' de ' + d.getFullYear();
+          this.displayDateIn = this.dProvider.displayDate(this.reservationdata.dateIn);
         } else {
           this.reservationdata.dateOut = dataReturned.data;
-          const d = this.reservationdata.dateOut;
-          this.displayDateOut = WEEKDAYS[d.getDay()] + ', ' + d.getDate() + ' de ' +  MONTHS[d.getMonth()] + ' de ' + d.getFullYear();
+          this.displayDateOut = this.dProvider.displayDate(this.reservationdata.dateOut);
         }
         this.emitir();
       }
