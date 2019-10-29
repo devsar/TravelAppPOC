@@ -150,11 +150,7 @@ En la ciudad se puede caminar por la selva en la mañana y asistir a una ópera 
         id: 14,
         name: 'Foz do Iguaçu',
         state: 'Paraná',
-        img: `
-        Manaos es la capital del Estado de Amazonas en Brasil y se ubica en la Región Norte del país.
-
-        En la ciudad se puede caminar por la selva en la mañana y asistir a una ópera de noche. Manaos ofrece un espacio rodeado de naturaleza, cultura, arte y gastronomía. Te deslumbrarán los maravillosos espectáculos que ofrece el majestuoso teatro de ópera Amazonas, construido con materiales de alta gama.
-        `,
+        img: `https://cdn.getyourguide.com/img/tour_img-1732924-145.jpg`,
         description: 'Hermosa ciudad',
         slug: 'foz-do-iguacu'
     },
