@@ -3,6 +3,7 @@
   <ion-card-header>
     <!-- <ion-card-subtitle>Destino</ion-card-subtitle> -->
     <ion-card-title>{{ citydata.name }}, {{citydata.state}} </ion-card-title>
+    <ion-icon (click)="openDescription($event, citydata.name, citydata.state, citydata.description)" name="information-circle"></ion-icon>
   </ion-card-header>
   <!-- <ion-card-content>
     {{ citydata.description }}

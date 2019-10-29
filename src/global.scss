@@ -93,3 +93,8 @@ html, body, app-root, ion-app {
 .popover-content {
     --width: 92vw;
 }
+
+.alert-wrapper {
+    max-width: 90vw !important;
+    max-height: 80vh !important;
+}
