@@ -1,5 +1,6 @@
 <ion-card *ngIf="inndata">
   <ion-slides pager="true" [options]="slideOpts">
+    <p></p><!-- Fix for dissapearing slides -->
     <ion-slide *ngFor="let img of inndata.imgs">
       <ion-img [src]="img"></ion-img>
     </ion-slide>
