@@ -15,7 +15,7 @@ export class ReservationFooterComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {  }
 
   go() {
     if (!this.checkErrrors()) {
@@ -28,8 +28,14 @@ export class ReservationFooterComponent implements OnInit {
     }
   }
 
+  // Should return false if no errors are catched and true if there are errors.
   checkErrrors() {
-    return this.reservationdata.adults + this.reservationdata.children > this.inndata.capacity;
+    const huedespesMax: boolean = this.reservationdata.adults + this.reservationdata.children > this.inndata.capacity;
+    const huespedesMin: boolean = this.reservationdata.adults < 1;
+    const dateIn: boolean = this.reservationdata.dateIn === null || this.reservationdata.dateIn === undefined;
+    const dateOut: boolean = this.reservationdata.dateOut === null || this.reservationdata.dateOut === undefined;
+    const validDates: boolean = this.reservationdata.dateOut.getTime() <= this.reservationdata.dateIn.getTime();
+    return (huespedesMin || huespedesMin || huedespesMax || dateIn || dateOut || validDates);
   }
 
   setCharges() {
@@ -37,5 +43,6 @@ export class ReservationFooterComponent implements OnInit {
     this.reservationdata.platformCharge = this.inndata.price * 0.1;
     this.reservationdata.taxes = 2.25;
   }
+
 
 }
