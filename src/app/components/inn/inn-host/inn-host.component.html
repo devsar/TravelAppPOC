@@ -12,11 +12,11 @@
         {{ inndata.hostUser.bioText }}
       </ion-card-content>
       <ion-card-content>
-         Idiomas: <span *ngFor="let lan of inndata.hostUser.languages">{{ lan }}, </span>
-         Índice de respuestas: <span>{{ inndata.hostUser.responseRate }}</span>
-         <div *ngIf="inndata.hostUser.verifiedUser">
-           Usuario verificado: <ion-icon color="primary" name="checkmark-circle"></ion-icon>
-         </div>
+        <p>Idiomas: <span *ngFor="let lan of inndata.hostUser.languages">{{ lan }}, </span></p>
+        <p>Índice de respuestas: <span>{{ inndata.hostUser.responseRate }}</span></p>
+        <div *ngIf="inndata.hostUser.verifiedUser">
+          Usuario verificado: <ion-icon color="primary" name="checkmark-circle"></ion-icon>
+        </div>
       </ion-card-content>
       
     </ion-card>

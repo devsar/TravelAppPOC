@@ -8,8 +8,7 @@ import { PopoverController, NavParams } from '@ionic/angular';
 })
 export class ReservationDateSelectorComponent implements OnInit {
 
-  fechaEntrada: boolean;
-  dateReturned = '';
+  fechaEntrada: Date;
 
   constructor(
     private popoverController: PopoverController,
@@ -21,7 +20,7 @@ export class ReservationDateSelectorComponent implements OnInit {
     this.fechaEntrada = this.navParams.data.paramEsInicio;
   }
 
-  dateSelected(ev: any) {
+  dateSelected(ev: Date) {
     this.fechaEntrada = ev;
   }
 

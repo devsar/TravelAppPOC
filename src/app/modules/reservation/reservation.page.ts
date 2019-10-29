@@ -16,8 +16,8 @@ export class ReservationPage implements OnInit {
   inndata: Inn;
   reservationdata: Reservation = {
     id: 0,
-    dateIn: '',
-    dateOut: '',
+    dateIn: new Date(),
+    dateOut: new Date(),
     pricePerNight: 0,
     platformCharge: 0,
     taxes: 0,

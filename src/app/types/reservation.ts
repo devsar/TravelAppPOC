@@ -1,7 +1,7 @@
 export class Reservation {
     id: number;
-    dateIn: string;
-    dateOut: string;
+    dateIn: Date;
+    dateOut: Date;
     pricePerNight: number;
     platformCharge: number;
     taxes: number;

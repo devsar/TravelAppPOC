@@ -3,7 +3,7 @@
   <div class="in-date-container">
     <h6>Entrada</h6>
     <ion-button (click)="presentPopover($event, true)" size="small" fill="clear">Seleccionar fecha</ion-button>
-    <span *ngIf="this.reservationdata.dateIn">{{this.reservationdata.dateIn}}</span>
+    <span *ngIf="displayDateIn">{{ displayDateIn }}</span>
   </div>
   <div class="separator">
     
@@ -11,6 +11,6 @@
   <div class="out-date-container">
       <h6>Salida</h6>
       <ion-button (click)="presentPopover($event, false)" size="small" fill="clear">Seleccionar fecha</ion-button>
-      <span *ngIf="this.reservationdata.dateOut">{{this.reservationdata.dateOut}}</span>
+      <span *ngIf="displayDateOut ">{{ displayDateOut }}</span>
     </div>
 </section>
