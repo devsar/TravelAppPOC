@@ -24,7 +24,6 @@ export class HomeSearchbarComponent implements OnInit {
   }
 
   emitir(filteredCities: Ciudad[]) {
-    console.log('emitiendo cities filtradas');
     this.propagar.emit(filteredCities);
   }
 

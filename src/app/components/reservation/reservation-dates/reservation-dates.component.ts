@@ -59,11 +59,9 @@ export class ReservationDatesComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('cargado');
   }
 
   emitir() {
-    console.log('emitiendo dates');
     this.propagar.emit(this.reservationdata);
   }
 

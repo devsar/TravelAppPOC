@@ -24,15 +24,9 @@ export class HomePage implements OnInit {
     setTimeout(() => {
       this.getCities();
     }, 1000);
-
-    let d = new Date('Wed Oct 02 2019 00:00:00 GMT-0300 (hora estándar de Argentina)');
-    console.log(d);
-    console.log(typeof(d));
-    console.log(d.getFullYear() + ' ' + d.getDate() + ' ' + d.getMonth());
   }
 
   updateCities(data: Ciudad[]) {
-    console.log(data);
     this.ciudades = data;
   }
 }

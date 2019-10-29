@@ -18,7 +18,6 @@ export class PaymentFormComponent implements OnInit {
   }
 
   emitir() {
-    console.log('cerrar');
     this.propagar.emit();
   }
 

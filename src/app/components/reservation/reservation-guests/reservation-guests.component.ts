@@ -59,7 +59,6 @@ export class ReservationGuestsComponent implements OnInit {
   }
 
   emitir() {
-    console.log('emitiendo guests');
     this.propagar.emit(this.reservationdata);
   }
 
