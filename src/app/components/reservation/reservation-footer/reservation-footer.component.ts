@@ -38,7 +38,7 @@ export class ReservationFooterComponent implements OnInit {
     const dateIn: boolean = this.reservationdata.dateIn === null || this.reservationdata.dateIn === undefined;
     const dateOut: boolean = this.reservationdata.dateOut === null || this.reservationdata.dateOut === undefined;
     let invalidDates = true;
-    if (dateIn && dateOut) {
+    if (!dateIn && !dateOut) {
       invalidDates = this.reservationdata.dateOut.getTime() <= this.reservationdata.dateIn.getTime();
     }
     return (huespedesMin || huespedesMin || huedespesMax || dateIn || dateOut || invalidDates);
