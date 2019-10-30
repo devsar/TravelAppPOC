@@ -9,7 +9,7 @@ import { TopbarComponent } from 'src/app/components/home/topbar/topbar.component
 import { TarjetaCiudadComponent } from 'src/app/components/home/tarjeta-ciudad/tarjeta-ciudad.component';
 import { HomeSearchbarComponent } from 'src/app/components/home/home-searchbar/home-searchbar.component';
 import { CiudadesProviderService } from 'src/app/services/ciudades-provider/ciudades-provider.service';
-import { TarjetaCiudadSkeletonComponent } from 'src/app/components/home/tarjeta-ciudad-skeleton/tarjeta-ciudad-skeleton.component';
+import { CityCardSkeletonComponent } from 'src/app/components/skeletons/city-card-skeleton/city-card-skeleton.component';
 
 @NgModule({
   imports: [
@@ -23,7 +23,7 @@ import { TarjetaCiudadSkeletonComponent } from 'src/app/components/home/tarjeta-
       }
     ])
   ],
-  declarations: [HomePage, TopbarComponent, TarjetaCiudadComponent, HomeSearchbarComponent, TarjetaCiudadSkeletonComponent],
+  declarations: [HomePage, TopbarComponent, TarjetaCiudadComponent, HomeSearchbarComponent, CityCardSkeletonComponent],
   providers: [CiudadesProviderService],
 })
 export class HomePageModule {}

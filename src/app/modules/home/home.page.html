@@ -9,9 +9,11 @@
       <app-tarjeta-ciudad [routerLink]="['../city/' + ciudad.slug]" *ngFor="let ciudad of ciudades" [citydata]="ciudad"></app-tarjeta-ciudad>
     </div>
     <div *ngIf="!ciudades.length">
-      <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
-      <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
-      <app-tarjeta-ciudad-skeleton></app-tarjeta-ciudad-skeleton>
+      <app-city-card-skeleton></app-city-card-skeleton>
+      <app-city-card-skeleton></app-city-card-skeleton>
+      <app-city-card-skeleton></app-city-card-skeleton>
+      <app-city-card-skeleton></app-city-card-skeleton>
+      <app-city-card-skeleton></app-city-card-skeleton>
     </div>
   </div>
 </ion-content>

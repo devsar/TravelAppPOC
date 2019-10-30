@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TarjetaCiudadSkeletonComponent } from './tarjeta-ciudad-skeleton.component';
+import { CityCardSkeletonComponent } from './city-card-skeleton.component';
 
-describe('TarjetaCiudadSkeletonComponent', () => {
-  let component: TarjetaCiudadSkeletonComponent;
-  let fixture: ComponentFixture<TarjetaCiudadSkeletonComponent>;
+describe('CityCardSkeletonComponent', () => {
+  let component: CityCardSkeletonComponent;
+  let fixture: ComponentFixture<CityCardSkeletonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TarjetaCiudadSkeletonComponent ],
+      declarations: [ CityCardSkeletonComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TarjetaCiudadSkeletonComponent);
+    fixture = TestBed.createComponent(CityCardSkeletonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
