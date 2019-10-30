@@ -77,7 +77,10 @@ Estructura(Jerarquía) del proyecto:
 -   // Home Topbar
 -   // Add info alerts in payment
 -   // Manage dates properly
--   Add city header features
+-   // Add city header features
 -   // Check for dates in reservation page
--   Add skeletons: city card, inn-card, cit header, inn page, payment and reservation
+-   // Add skeletons: city card, inn-card, cit header, inn page, payment and reservation
 -   Add spinner processing payment
+-   // Automatically open resefvation date out popup after selecting reservation date in reservationd-dates
+-   // Minimum possible reservation today
+-   Implement apiari or similar
