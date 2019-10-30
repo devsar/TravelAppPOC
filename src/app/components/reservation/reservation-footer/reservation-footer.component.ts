@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Inn } from 'src/app/types/inn';
 import { Reservation } from 'src/app/types/reservation';
 import { Router } from '@angular/router';
+import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
 
 @Component({
   selector: 'app-reservation-footer',
@@ -13,7 +14,9 @@ export class ReservationFooterComponent implements OnInit {
   @Input() inndata: Inn;
   @Input() reservationdata: Reservation;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private dProvider: DateProviderService) { }
 
   ngOnInit() {  }
 
@@ -34,14 +37,16 @@ export class ReservationFooterComponent implements OnInit {
     const huespedesMin: boolean = this.reservationdata.adults < 1;
     const dateIn: boolean = this.reservationdata.dateIn === null || this.reservationdata.dateIn === undefined;
     const dateOut: boolean = this.reservationdata.dateOut === null || this.reservationdata.dateOut === undefined;
-    const validDates: boolean = this.reservationdata.dateOut.getTime() <= this.reservationdata.dateIn.getTime();
-    return (huespedesMin || huespedesMin || huedespesMax || dateIn || dateOut || validDates);
+    let invalidDates = true;
+    if (dateIn && dateOut) {
+      invalidDates = this.reservationdata.dateOut.getTime() <= this.reservationdata.dateIn.getTime();
+    }
+    return (huespedesMin || huespedesMin || huedespesMax || dateIn || dateOut || invalidDates);
   }
 
   setCharges() {
-    const oneDay = 1000 * 60 * 60 * 24;
-    const reservationDays = (this.reservationdata.dateOut.getTime() - this.reservationdata.dateIn.getTime()) / oneDay;
-    this.reservationdata.pricePerNight = this.inndata.price * reservationDays;
+    // tslint:disable-next-line: max-line-length
+    this.reservationdata.pricePerNight = this.inndata.price * this.dProvider.getDaysBetweenDates(this.reservationdata.dateIn, this.reservationdata.dateOut).nights;
     this.reservationdata.platformCharge = this.inndata.price * 0.1;
     this.reservationdata.taxes = 2.25;
   }

@@ -5,6 +5,13 @@ h1 {
     text-align: center;
     width: 100%;
 }
+h6.daysCount {
+    color: #da4473;
+    border: 1px solid #da4473;
+    padding: 6px;
+    text-align: center;
+    line-height: 2;
+}
 .dates-container {
     // TODO: probablemento estro tendría que ser global
     border-bottom: 1px solid #aaa;

@@ -3,6 +3,7 @@ import { PopoverController } from '@ionic/angular';
 import { ReservationDateSelectorComponent } from '../reservation-date-selector/reservation-date-selector.component';
 import { Reservation } from 'src/app/types/reservation';
 import { DateProviderService } from 'src/app/services/date-provider/date-provider.service';
+import { ReservationDays } from 'src/app/types/reservationdays';
 
 @Component({
   selector: 'app-reservation-dates',
@@ -20,14 +21,15 @@ export class ReservationDatesComponent implements OnInit {
 
   displayDateIn: string;
   displayDateOut: string;
+  displayReservationDays: ReservationDays;
 
   reservationdata: Reservation = {
     id: 0,
     pricePerNight: 0,
     taxes: 0,
     platformCharge: 0,
-    dateIn: new Date(),
-    dateOut: new Date(),
+    dateIn: null,
+    dateOut: null,
     adults: 0,
     children: 0,
   };
@@ -44,14 +46,7 @@ export class ReservationDatesComponent implements OnInit {
 
     popover.onDidDismiss().then((dataReturned) => {
       if (dataReturned !== null && dataReturned.data !== undefined) {
-        if (esInicio) {
-          this.reservationdata.dateIn = dataReturned.data;
-          this.displayDateIn = this.dProvider.displayDate(this.reservationdata.dateIn);
-        } else {
-          this.reservationdata.dateOut = dataReturned.data;
-          this.displayDateOut = this.dProvider.displayDate(this.reservationdata.dateOut);
-        }
-        this.emitir();
+        this.updateDateDisplayData(dataReturned, esInicio);
       }
     });
 
@@ -64,5 +59,26 @@ export class ReservationDatesComponent implements OnInit {
   emitir() {
     this.propagar.emit(this.reservationdata);
   }
+  
+  updateDateDisplayData(dataReturned: any, esInicio: boolean) {
+    // Actualizamos los string que se muestran de cada fecha seleccionada
+    if (esInicio) {
+      this.reservationdata.dateIn = dataReturned.data;
+      this.displayDateIn = this.dProvider.displayDate(this.reservationdata.dateIn);
+    } else {
+      this.reservationdata.dateOut = dataReturned.data;
+      this.displayDateOut = this.dProvider.displayDate(this.reservationdata.dateOut);
+    }
+
+    // Si hay ambas fechas seleccionadas, actualizamos la cantidad de noches y dias
+    // Estos ifs deben ir anidados, no se pueden juntar porque da error si alguna data es null o undefined
+    if (this.reservationdata.dateIn && this.reservationdata.dateOut) {
+      if (this.reservationdata.dateOut.getTime() > this.reservationdata.dateIn.getTime()) {
+        this.displayReservationDays = this.dProvider.getDaysBetweenDates(this.reservationdata.dateOut, this.reservationdata.dateIn);
+      }
+    }
+    this.emitir();
+  }
+
 
 }
