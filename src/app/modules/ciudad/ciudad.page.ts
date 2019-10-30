@@ -12,8 +12,8 @@ import { InnsProviderService } from 'src/app/services/inns-provider/inns-provide
 })
 export class CiudadPage implements OnInit {
 
-  citydata: any = {};
-  cityinns: Inn[] = [];
+  citydata: any;
+  cityinns: Inn[];
 
   constructor(
     private route: ActivatedRoute,
@@ -23,8 +23,10 @@ export class CiudadPage implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.getCity();
-    this.getInns(this.citydata.slug);
+    setTimeout( () => {
+      this.getCity();
+      this.getInns(this.citydata.slug);
+    }, 1000);
   }
 
   getCity() {

@@ -1,7 +1,15 @@
 <ion-content>
-    <app-city-header [citydata]="citydata"></app-city-header>
+    <app-city-header *ngIf="citydata" [citydata]="citydata"></app-city-header>
+    <app-city-header-skeleton *ngIf="!citydata"></app-city-header-skeleton>
 
-    <section class="ion-padding">
+    <section *ngIf="cityinns" class="ion-padding">
         <app-inn-card [routerLink]="['../../inn/' + inn.id]" routerLinkActive="router-link-active"  *ngFor="let inn of cityinns" [inndata]="inn"></app-inn-card>
+    </section>
+    <section *ngIf="!cityinns" class="ion-padding">
+        <app-inn-card-skeleton></app-inn-card-skeleton>
+        <app-inn-card-skeleton></app-inn-card-skeleton>
+        <app-inn-card-skeleton></app-inn-card-skeleton>
+        <app-inn-card-skeleton></app-inn-card-skeleton>
+        <app-inn-card-skeleton></app-inn-card-skeleton>
     </section>
 </ion-content>
