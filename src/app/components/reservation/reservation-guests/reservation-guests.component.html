@@ -1,7 +1,7 @@
 <section class="guests-container" *ngIf="inndata">
   
   <h1>Seleccionar huéspedes</h1>
-  <h5 class="capacityController" [ngClass]="checkErrors() ? 'error' : ''">{{ getGuestsQty() }} seleccionados de un máximo de {{ inndata.capacity }} huéspedes</h5>
+  <h6 class="guestsCount" [ngClass]="checkErrors() ? 'error' : ''">{{ getGuestsQty() }} seleccionados de un máximo de {{ inndata.capacity }} huéspedes</h6>
 
   <div class="adultos fila">
     <div class="fila-left">
