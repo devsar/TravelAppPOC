@@ -1,8 +1,19 @@
 
+section.skeleton {
+    border-color: #aaa;
+    ion-icon{
+        color: #aaa;
+    }
+    .inn-brief-numbers {
+        color: #aaa;
+    }
+}
+
 section {
     padding-bottom: 12px;
     border-bottom: 1px solid #da4473;
 }
+
 h1.title {
     font-weight: 600;
     padding: 0 6px;

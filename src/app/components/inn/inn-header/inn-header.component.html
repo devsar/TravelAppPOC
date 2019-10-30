@@ -3,3 +3,8 @@
   <ion-button class="explore">Explorar espacio</ion-button>
   <ion-img [src]="inndata.imgs[0]"></ion-img>
 </section>
+<section *ngIf="!inndata">
+    <ion-button class="back" fill="clear" color="light"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+    <ion-button color="medium" class="explore skeleton">Explorar espacio</ion-button>
+    <ion-skeleton-text animated width="100vw" style="height: 40vh;"></ion-skeleton-text>
+</section>

@@ -8,6 +8,8 @@ import { Inn } from 'src/app/types/inn';
 })
 export class InnServicesComponent implements OnInit {
 
+  skeletonIcons: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+
   @Input() inndata: Inn;
 
   constructor() { }

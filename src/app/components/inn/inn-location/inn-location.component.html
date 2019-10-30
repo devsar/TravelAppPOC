@@ -28,3 +28,15 @@
       </ion-fab-button>
   </div>
 </section>
+<section *ngIf="!inndata" class="skeleton">
+    <h1><ion-skeleton-text width="60%" style="height: 35px;"></ion-skeleton-text></h1>
+    <ion-skeleton-text animated width="90%" style="height: 15px; margin: 6px 0;"></ion-skeleton-text>
+    <ion-skeleton-text animated width="90%" style="height: 15px; margin: 6px 0;"></ion-skeleton-text>
+    <ion-skeleton-text animated width="90%" style="height: 15px; margin: 6px 0;"></ion-skeleton-text>
+    <ion-skeleton-text animated width="60%" style="height: 15px; margin: 6px 0;"></ion-skeleton-text>
+    <!-- this creates a google map on the page with the given lat/lng from -->
+    <!-- the component as the initial center of the map: -->
+    <div class="map-container">
+      <ion-skeleton-text animated width="100%" style="height: 30vh;"></ion-skeleton-text>
+    </div>
+  </section>

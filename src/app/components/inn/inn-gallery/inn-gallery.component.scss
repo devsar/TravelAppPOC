@@ -3,6 +3,12 @@ section {
     padding-bottom: 36px;
     border-bottom: 1px solid #da4473;
 }
+section.skeleton {
+    border-color: #aaa;
+    .gallery-title {
+        width: 100%;
+    }
+}
 h1 {
     color: #da4473;
     margin-top: 36px;

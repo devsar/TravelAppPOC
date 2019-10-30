@@ -27,3 +27,36 @@
     <p>{{ inndata.description }}</p>
   </div>
 </section>
+<section class="skeleton" *ngIf="!inndata">
+    <h6><ion-skeleton-text width="60%"></ion-skeleton-text></h6>
+    <h1 class="title"><ion-skeleton-text width="80%"></ion-skeleton-text></h1>
+    <div class="inn-brief-numbers">
+      <div class="inn-brief-number">
+        <h2> <ion-skeleton-text width="33px"></ion-skeleton-text></h2>
+        <ion-icon src="https://image.flaticon.com/icons/svg/259/259950.svg"></ion-icon> 
+        <h6> Huéspedes </h6>
+      </div>
+      <div class="inn-brief-number">
+        <h2> <ion-skeleton-text width="33px"></ion-skeleton-text> </h2>
+        <ion-icon src="https://image.flaticon.com/icons/svg/259/259965.svg"></ion-icon>
+        <h6> Habitaciones </h6>
+      </div>
+      <div class="inn-brief-number">
+        <h2><ion-skeleton-text width="33px"></ion-skeleton-text></h2>
+        <ion-icon src="https://image.flaticon.com/icons/svg/259/259963.svg"></ion-icon>
+        <h6> Camas </h6>
+      </div>
+      <div class="inn-brief-number">
+        <h2><ion-skeleton-text width="33px"></ion-skeleton-text></h2>
+        <ion-icon src="https://image.flaticon.com/icons/svg/259/259974.svg"></ion-icon>
+        <h6> Baños </h6>
+      </div>
+    </div>
+    <div class="inn-description">
+      <p><ion-skeleton-text width="80%"></ion-skeleton-text></p>
+      <p><ion-skeleton-text width="80%"></ion-skeleton-text></p>
+      <p><ion-skeleton-text width="80%"></ion-skeleton-text></p>
+      <p><ion-skeleton-text width="80%"></ion-skeleton-text></p>
+      <p><ion-skeleton-text width="40%"></ion-skeleton-text></p>
+    </div>
+  </section>

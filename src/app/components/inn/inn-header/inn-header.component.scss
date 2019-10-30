@@ -6,6 +6,9 @@ ion-button.explore {
     bottom: 10px;
     right: 10px;
 }
+ion-button.explore.skeleton {
+    bottom: 40px;
+}
 ion-button.back {
     position: absolute;
     top: 10px;
