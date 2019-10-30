@@ -1,12 +1,15 @@
-<section *ngIf="inndata" class="inn-footer-container">
+<section class="inn-footer-container">
   <div class="left">
     <div class="left-top">
-      <span>{{ inndata.innType.type }}</span>
+      <span *ngIf="inndata">{{ inndata.innType.type }}</span>
+      <ion-skeleton-text *ngIf="!inndata" animated width="60%" style="height: 20px;"></ion-skeleton-text>
     </div>
     <div class="left-middle">
-      <h6>${{ inndata.price }} </h6> <span>&nbsp;por noche en total</span>
+      <h6 *ngIf="inndata">${{ inndata.price }} </h6> <span *ngIf="inndata">&nbsp;por noche en total</span>
+      <ion-skeleton-text *ngIf="!inndata" animated width="40%" style="height: 15px;"></ion-skeleton-text>
+
     </div>
-    <div class="left-bottom">
+    <div class="left-bottom" *ngIf="inndata">
       <ion-icon name="star" *ngIf="inndata.rating >= 1"></ion-icon>
       <ion-icon name="star" *ngIf="inndata.rating >= 2"></ion-icon>
       <ion-icon name="star" *ngIf="inndata.rating >= 3"></ion-icon>
@@ -16,8 +19,12 @@
       <ion-icon name="star" *ngIf="inndata.rating == 5"></ion-icon>
       <span>&nbsp; {{ inndata.ratingQty }} evalucaciones</span>
     </div>
+    <div class="left-bottom" *ngIf="!inndata">
+        <ion-skeleton-text animated width="50%" style="height: 12px;"></ion-skeleton-text>
+    </div>
   </div>
   <div class="right">
-    <ion-img [src]="inndata.imgs[0]"></ion-img>
+    <ion-img *ngIf="inndata" [src]="inndata.imgs[0]"></ion-img>
+    <ion-skeleton-text *ngIf="!inndata" animated width="100%" style="height: 15vh;"></ion-skeleton-text>
   </div>
 </section>

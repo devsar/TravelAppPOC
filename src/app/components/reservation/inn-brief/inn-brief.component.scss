@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: 65%;
 }
 .left-top {
     display: flex;
@@ -23,12 +24,14 @@
     text-transform: uppercase;
     color: #555;
     font-size: 12px;
+    width: 100%;
 }
 .left-middle {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
     h6 {
         margin: 0;
         font-size: 15px;
@@ -45,6 +48,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
     ion-icon {
         font-size: 13px;
     }
