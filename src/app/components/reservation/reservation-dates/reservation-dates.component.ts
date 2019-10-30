@@ -65,6 +65,7 @@ export class ReservationDatesComponent implements OnInit {
     if (esInicio) {
       this.reservationdata.dateIn = dataReturned.data;
       this.displayDateIn = this.dProvider.displayDate(this.reservationdata.dateIn);
+      this.presentPopover(null, false);
     } else {
       this.reservationdata.dateOut = dataReturned.data;
       this.displayDateOut = this.dProvider.displayDate(this.reservationdata.dateOut);

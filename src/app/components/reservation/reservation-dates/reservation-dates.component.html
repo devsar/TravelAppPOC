@@ -1,5 +1,8 @@
 <h1>¿Cuánto durará tu viaje?</h1>
-<h6 class="daysCount" *ngIf="displayReservationDays">{{ displayReservationDays.days }} días y {{ displayReservationDays.nights}} noches</h6>
+<h6 class="daysCount" *ngIf="displayReservationDays && reservationdata.dateIn.getTime() < reservationdata.dateOut.getTime()">{{ displayReservationDays.days }} días y {{ displayReservationDays.nights}} noches</h6>
+<div *ngIf="reservationdata.dateIn && reservationdata.dateOut">
+  <h6 class="daysCount error" *ngIf="reservationdata.dateIn.getTime() >= reservationdata.dateOut.getTime()">Por favor, asegúrate de que la fecha de salida sea posterior a la de entrada.</h6>
+</div>
 <section class="dates-container">
   <div class="in-date-container">
     <h6>Entrada</h6>

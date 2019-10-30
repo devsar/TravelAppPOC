@@ -12,6 +12,11 @@ h6.daysCount {
     text-align: center;
     line-height: 2;
 }
+h6.daysCount.error {
+    color: red;
+    font-size: 12px;
+    border-color: red;
+}
 .dates-container {
     // TODO: probablemento estro tendría que ser global
     border-bottom: 1px solid #aaa;

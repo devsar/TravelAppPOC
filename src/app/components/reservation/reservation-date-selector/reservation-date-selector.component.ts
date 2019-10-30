@@ -8,7 +8,12 @@ import { PopoverController, NavParams } from '@ionic/angular';
 })
 export class ReservationDateSelectorComponent implements OnInit {
 
-  fechaEntrada: Date;
+  fechaEntrada: boolean;
+  fechaDevuelta: Date;
+
+  selectedDate: Date = new Date();
+  minDate: Date = new Date();
+  maxDate: Date = new Date(new Date().getFullYear() + 1, new Date().getMonth());
 
   constructor(
     private popoverController: PopoverController,
@@ -21,11 +26,18 @@ export class ReservationDateSelectorComponent implements OnInit {
   }
 
   dateSelected(ev: Date) {
-    this.fechaEntrada = ev;
+    this.fechaDevuelta = ev;
   }
 
   async closeModal() {
-    await this.popoverController.dismiss(this.fechaEntrada);
+    await this.popoverController.dismiss(this.fechaDevuelta);
   }
 
+  selectedDayStyle() {
+    if (this.fechaEntrada) {
+      return { 'border-radius': '20px 0 0 20px', 'background': '#da4473', 'color': 'white' };
+    } else {
+      return { 'border-radius': '0 20px 20px 0', 'background': '#da4473', 'color': 'white' };
+    }
+  }
 }
